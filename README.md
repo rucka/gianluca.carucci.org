@@ -3,10 +3,18 @@ This is my official pure html5/css3/javascript [personal website](http://gianluc
 The intent of this code is show how to move website asset and content development from windows (Visual Studio & powershell) to independent platform.
 
 ##Tools
-Project is developed using Visual Studio 2013 professional, [purehtml](http://purehtml.codeplex.com) project template and [Web Essential 2013](http://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361) for resource minification: no server side technology was used.
+In order to build this project you need only an editor (for example vim), nodejs and grunt: no server side technology was used.
 
 ##Build
-In order to publish website, please run powershell script [publish.ps1](https://github.com/rucka/gianluca.carucci.org/blob/master/publish.ps1) and deploy content inside 'publish' created folder.
+Follow next steps to build and run project:
+
+1. install [node.js](http://nodejs.org/)
+2. run `npm install --save-dev` to install the project dependencies
+3. run `grunt` to build assests
+4. publish 'publish' folder to an http server and enjoy 
+
+If you need an embedded http-server you can run `npm install -g http-server`. After installation run `http-server [your clone repo folder]/publish` and visit http://localhost:8080/index.html
+
 
 ##Licence
 Project is under MIT licence, so feel free to copy and use code for your personal use.
