@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC6D1812-9E2E-4EAE-AA9A-D9B48CC9E1E5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gianluca.carucci.org</RootNamespace>
+    <AssemblyName>gianluca.carucci.org</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--<Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />-->
+    <Folder Include="fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\main.css">
+      <DependentUpon>main.less</DependentUpon>
+    </Content>
+    <Content Include="css\main.min.css">
+      <DependentUpon>main.less</DependentUpon>
+    </Content>
+    <Content Include="css\reset.css" />
+    <Content Include="css\reset.min.css">
+      <DependentUpon>reset.css</DependentUpon>
+    </Content>
+    <Content Include="css\social.css" />
+    <Content Include="css\social.min.css">
+      <DependentUpon>social.css</DependentUpon>
+    </Content>
+    <Content Include="images\blogger.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\heros\beck.jpg" />
+    <Content Include="images\heros\campagna.jpg" />
+    <Content Include="images\heros\deandre.jpg" />
+    <Content Include="images\hobbies\daughter.jpg" />
+    <Content Include="images\hobbies\food.jpg" />
+    <Content Include="images\hobbies\interior_design.jpg" />
+    <Content Include="images\hobbies\juve.jpg" />
+    <Content Include="images\landing.jpg" />
+    <Content Include="images\logo-bar-white.png" />
+    <Content Include="images\heros\norman.jpg" />
+    <Content Include="images\heros\senna.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\pattern.png" />
+    <Content Include="images\scroller-black.png" />
+    <Content Include="images\scroller.png" />
+    <Content Include="images\social-black.png" />
+    <Content Include="images\social-white.png" />
+    <Content Include="images\titlemask.png" />
+    <Content Include="images\hobbies\waterpolo.jpg" />
+    <Content Include="scripts\ga.js" />
+    <Content Include="scripts\default.min.js">
+      <DependentUpon>default.js</DependentUpon>
+    </Content>
+    <Content Include="scripts\ga.min.js">
+      <DependentUpon>ga.js</DependentUpon>
+    </Content>
+    <Content Include="scripts\loader.js" />
+    <Content Include="scripts\loader.min.js">
+      <DependentUpon>loader.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\html5.min.js">
+      <DependentUpon>html5.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.awesomeCloud.min.js">
+      <DependentUpon>jquery.awesomeCloud.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.html5loader\animations\jquery.big-counter.min.js">
+      <DependentUpon>jquery.big-counter.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.html5loader\animations\jquery.html5Loader.circular.min.js">
+      <DependentUpon>jquery.html5Loader.circular.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.html5loader\animations\jquery.html5Loader.line.min.js">
+      <DependentUpon>jquery.html5Loader.line.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.html5loader\jquery.html5Loader.min.js">
+      <DependentUpon>jquery.html5Loader.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.js" />
+    <Content Include="vendor\jquery.knob.min.js">
+      <DependentUpon>jquery.knob.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.min.js">
+      <DependentUpon>jquery.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.scrollTo.js" />
+    <Content Include="vendor\jquery.scrollTo.min.js">
+      <DependentUpon>jquery.scrollTo.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\underscore.js" />
+    <Content Include="vendor\underscore.min.js">
+      <DependentUpon>underscore.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\waypoints.js" />
+    <Content Include="vendor\html5.js" />
+    <Content Include="vendor\jquery.awesomeCloud.js" />
+    <Content Include="vendor\jquery.html5loader\animations\jquery.big-counter.js" />
+    <Content Include="vendor\jquery.html5loader\animations\jquery.html5Loader.circular.js" />
+    <Content Include="vendor\jquery.html5loader\animations\jquery.html5Loader.line.js" />
+    <Content Include="vendor\jquery.html5loader\jquery.html5Loader.js" />
+    <Content Include="vendor\jquery.knob.js" />
+    <Content Include="vendor\waypoints.min.js">
+      <DependentUpon>waypoints.js</DependentUpon>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="css\main.less" />
+    <None Include="scripts\default.js" />
+    <Content Include="index.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="vendor\jquery.scrollTo.min.js.map">
+      <DependentUpon>jquery.scrollTo.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.knob.min.js.map">
+      <DependentUpon>jquery.knob.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.awesomeCloud.min.js.map">
+      <DependentUpon>jquery.awesomeCloud.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\html5.min.js.map">
+      <DependentUpon>html5.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.html5loader\jquery.html5Loader.min.js.map">
+      <DependentUpon>jquery.html5Loader.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.html5loader\animations\jquery.big-counter.min.js.map">
+      <DependentUpon>jquery.big-counter.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.html5loader\animations\jquery.html5Loader.circular.min.js.map">
+      <DependentUpon>jquery.html5Loader.circular.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.html5loader\animations\jquery.html5Loader.line.min.js.map">
+      <DependentUpon>jquery.html5Loader.line.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\waypoints.min.js.map">
+      <DependentUpon>waypoints.js</DependentUpon>
+    </Content>
+    <Content Include="scripts\default.min.js.map">
+      <DependentUpon>default.js</DependentUpon>
+    </Content>
+    <Content Include="scripts\loader.min.js.map">
+      <DependentUpon>loader.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\jquery.min.js.map">
+      <DependentUpon>jquery.js</DependentUpon>
+    </Content>
+    <Content Include="vendor\underscore.min.js.map">
+      <DependentUpon>underscore.js</DependentUpon>
+    </Content>
+    <Content Include="scripts\ga.min.js.map">
+      <DependentUpon>ga.js</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64771</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:36262/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
