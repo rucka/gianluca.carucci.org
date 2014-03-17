@@ -9,11 +9,12 @@ In order to build this project you need only an editor (for example vim), nodejs
 Follow next steps to build and run project:
 
 1. install [node.js](http://nodejs.org/)
-2. run `npm install --save-dev` to install the project dependencies
-3. run `grunt` to build assests
-4. publish 'publish' folder to an http server and enjoy 
+2. clone this repository
+3. run `npm install --save-dev` to install the project dependencies
+4. run `grunt` to build assests
+5. put '[your cloned repo folder]/publish' folder under an http server and visit index.html page 
 
-If you need an embedded http-server you can run `npm install -g http-server`. After installation run `http-server [your clone repo folder]/publish` and visit http://localhost:8080/index.html
+If you need an embedded http-server you can run `npm install -g http-server`. After installation run `http-server [your cloned repo folder]/publish` and visit in your browser http://localhost:8080/index.html
 
 
 ##Licence
