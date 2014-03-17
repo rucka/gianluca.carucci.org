@@ -1,6 +1,6 @@
 {
   "name": "gianluca.carucci.org",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "This is code of my personal website published at http://gianluca.carucci.org",
   "main": "app.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "url": "https://github.com/rucka/gianluca.carucci.org.git"
   },
   "author": "Gianluca Carucci",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-uglify": "~0.4.0",
