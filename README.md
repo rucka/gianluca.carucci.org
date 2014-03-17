@@ -1,6 +1,6 @@
 #gianluca.carucci.org
 This is my official pure html5/css3/javascript [personal website](http://gianluca.carucci.org).
-The intent of this code is show how to move website asset and content development from windows (Visual Studio & powershell) to independent platform.
+The intent of this code is show how to move website asset and content development from windows (Visual Studio & powershell) to os independent platform.
 
 ##Tools
 In order to build this project you need only an editor (for example vim), nodejs and grunt: no server side technology was used.
