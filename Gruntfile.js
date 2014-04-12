@@ -4,6 +4,7 @@ module.exports = function(grunt) {
         clean: {
                    publish: 'publish',
                },
+
         copy: {
                   target: {
                         cwd: 'client',
@@ -82,21 +83,40 @@ module.exports = function(grunt) {
                     sourceMapIncludeSources: true,
                 },
                 files: {
-                    'publish/html5.js': 'client/vendor/html5.js'                    
-                }   /*[{
-                    cwd: 'client/',
-                    src: ['vendor/html5.js'],
-                    dest: '../publish/',
-                    //expand: true,
-                }]*/
+                    'publish/html5.js': 'client/vendor/html5.js'
+                }   
             },
+        },
+        watch: {
+            all: {
+                files: ['client/**'],
+                tasks: ['debug'],
+                options : {
+                    atBegin: true, 
+                    livereload:true
+                }
+            }
+        },
+        connect: {
+            server: {
+                options: {
+                    hostname: '0.0.0.0',
+                    port: 8080,
+                    base: './publish',
+                    debug: true,
+                    livereload: true,
+                    keepalive: false 
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-uglify'); 
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-browserify');
-    grunt.loadNpmTasks('grunt-exorcise');
-    grunt.registerTask('default', ['clean','copy', 'browserify', 'uglify']);    
+    grunt.registerTask('debug', ['clean','copy', 'browserify', 'uglify']);    
+    grunt.registerTask('default', ['connect','watch']);
 };
