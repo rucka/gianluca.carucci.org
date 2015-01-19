@@ -17,7 +17,7 @@ Follow next steps to build and run:
 If you want only build assets without start web server run, please `grunt debug`. In this case you can run your own http server. If you need an embedded http-server you can run `npm install -g http-server`. After installation run `http-server [your cloned repo folder]/publish` and visit in your browser http://localhost:8080/index.html
 
 ##Watch file changes and live reload
-Running grunt default task invoke watch [grunt](https://github.com/gruntjs/grunt-contrib-watch) plugin that enable auto rebuild of all assets when source files change. 
+Running grunt default task invokes watch [grunt](https://github.com/gruntjs/grunt-contrib-watch) plugin that enable auto rebuild of all assets when source files changes. 
 In addition, grunt has been configured in order to live reload browser page when source files change, so enjoy your coding session without worry about your assets.
 
 ##Licence
