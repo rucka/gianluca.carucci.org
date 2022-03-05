@@ -1,29 +1,24 @@
 {
   "name": "gianluca.carucci.org",
-  "version": "2.0.0",
-  "description": "This is code of my personal website published at http://gianluca.carucci.org",
-  "main": "app.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "sudo npm install -g grunt-cli"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rucka/gianluca.carucci.org.git"
-  },
-  "author": "Gianluca Carucci",
-  "license": "MIT",
-  "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-uglify": "~0.4.0",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-browserify": "~2.0.1",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-connect": "~0.7.1"
+    "export": "next export",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "underscore": "~1.6.0",
-    "jquery": "~2.1.0"
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.21",
+    "@types/react": "17.0.39",
+    "eslint": "8.10.0",
+    "eslint-config-next": "12.1.0",
+    "typescript": "4.6.2"
   }
 }

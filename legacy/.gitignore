@@ -1,0 +1,9 @@
+bin
+obj
+publish
+.DS_Store
+*.suo
+*~
+*.swp
+*.swo
+node_modules
