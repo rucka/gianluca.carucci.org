@@ -70,7 +70,7 @@ const Home: NextPage = () => {
               alt="Vercel Logo"
               width={72}
               height={16}
-              loader={customLoader}
+              unoptimized={true}
             />
           </span>
         </a>
