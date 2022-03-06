@@ -6,9 +6,9 @@ type Props = {};
 class Document extends NextDocument<Props> {
   render() {
     const page = this.props.__NEXT_DATA__.page;
-    if (page === "/legacy") {
-      return <LegacyDocument />;
-    }
+    // if (page === "/legacy") {
+    //   return <LegacyDocument />;
+    // }
     return <GreenFieldDocument />;
   }
 }
