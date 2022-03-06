@@ -9,15 +9,15 @@ const nextConfig = {
   //     },
   //   ];
   // },
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/legacy",
-        permanent: true,
-      },
-    ];
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: "/",
+  //       destination: "/legacy",
+  //       permanent: true,
+  //     },
+  //   ];
+  // },
   //https://github.com/vercel/next.js/issues/21079
   //Remove this workaround whenever the issue is fixed
   images: {
