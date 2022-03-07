@@ -1,13 +1,17 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import useGeolocation from "../hooks/useGeolocation";
 import styles from "../styles/Home.module.css";
 
-const customLoader = ({ src }: { src: string }) => {
-  return src;
-};
-
 const Home: NextPage = () => {
+  const { country } = useGeolocation();
+  const router = useRouter();
+  if (country && country !== "it") {
+    router.push("/legacy");
+    return <></>;
+  }
   return (
     <div className={styles.container}>
       <Head>

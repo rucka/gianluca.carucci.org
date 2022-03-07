@@ -17,16 +17,7 @@ const nextConfig = {
     return [{ source: "/legacy", destination: "/legacy/index.html" }];
   },
   async redirects() {
-    return [
-      ...[
-        {
-          source: "/",
-          destination: `/legacy`,
-          permanent: true,
-        },
-      ],
-      ...redirectLegacyRules,
-    ];
+    return [...redirectLegacyRules];
   },
   //https://github.com/vercel/next.js/issues/21079
   //Remove this workaround whenever the issue is fixed
