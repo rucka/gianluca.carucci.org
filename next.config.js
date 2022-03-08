@@ -14,7 +14,7 @@ const redirectLegacyRules = [
 const nextConfig = {
   reactStrictMode: true,
   async rewrites() {
-    return [{ source: "/legacy", destination: "/legacy/index.html" }];
+    return [{ source: "/en", destination: "/legacy/index.html" }];
   },
   async redirects() {
     return [...redirectLegacyRules];

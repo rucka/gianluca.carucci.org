@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   const { country } = useGeolocation();
   const router = useRouter();
   if (country && country !== "it") {
-    router.push("/legacy");
+    router.push("/en");
     return <></>;
   }
   return (
