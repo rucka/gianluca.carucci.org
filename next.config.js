@@ -1,24 +1,19 @@
 /** @type {import('next').NextConfig} */
 
-const redirectLegacyRules = [
-  "/css/:path*",
-  "/images/:path*",
-  "/scripts/:path*",
-  "/vendor/:path*",
-].map((a) => ({
+const redirectLegacyRules = ['/css/:path*', '/images/:path*', '/scripts/:path*', '/vendor/:path*'].map((a) => ({
   source: a,
   destination: `/legacy${a}`,
-  permanent: true,
-}));
+  permanent: true
+}))
 
 const nextConfig = {
   reactStrictMode: true,
   async rewrites() {
-    return [{ source: "/en", destination: "/legacy/index.html" }];
+    return [{ source: '/en', destination: '/legacy/index.html' }]
   },
   async redirects() {
-    return [...redirectLegacyRules];
-  },
+    return [...redirectLegacyRules]
+  }
   //https://github.com/vercel/next.js/issues/21079
   //Remove this workaround whenever the issue is fixed
   // images: {
@@ -28,6 +23,6 @@ const nextConfig = {
   //   loader: "imgix",
   //   path: "",
   // },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

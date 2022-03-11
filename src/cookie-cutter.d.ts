@@ -1,18 +1,18 @@
 //https://github.com/substack/cookie-cutter/blob/master/index.js
-declare module "cookie-cutter" {
+declare module 'cookie-cutter' {
   type Options = {
-    expires?: Date;
-    path?: string;
-    domain?: string;
-    secure?: boolean;
-  };
-  function get(key: string): string;
-  function set(key: string, value: string, opts?: Options): void;
+    expires?: Date
+    path?: string
+    domain?: string
+    secure?: boolean
+  }
+  function get(key: string): string
+  function set(key: string, value: string, opts?: Options): void
 
   export type CookieCutter = {
-    get;
-    set;
-  };
+    get: get
+    set: set
+  }
 
-  export = (document: Document) => CookieCutter;
+  export = (document: Document) => CookieCutter
 }

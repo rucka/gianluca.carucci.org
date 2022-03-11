@@ -1,10 +1,10 @@
-import NextDocument, { Html, Head, Main, NextScript } from "next/document";
-import React from "react";
+import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
+import React from 'react'
 
-type Props = {};
+type Props = {}
 class Document extends NextDocument<Props> {
   render() {
-    return <GreenFieldDocument />;
+    return <GreenFieldDocument />
   }
 }
 
@@ -17,7 +17,7 @@ const GreenFieldDocument = () => {
         <NextScript />
       </body>
     </Html>
-  );
-};
+  )
+}
 
-export default Document;
+export default Document
