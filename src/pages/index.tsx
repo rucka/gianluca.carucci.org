@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
 import useGeolocation from '../hooks/useGeolocation'
+import { Logo } from '../assets/images'
 
 const Header = styled.nav`
   display: flex;
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
           rel="noopener noreferrer">
           Powered by{' '}
           <span>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} unoptimized={true} />
+            <Logo style={{ width: 100, height: 100 }} />
           </span>
         </a>
       </footer>
