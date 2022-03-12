@@ -20,6 +20,9 @@ const svgr = {
 
 const nextConfig = {
   ...svgr,
+  compiler: {
+    styledComponents: true
+  },
   reactStrictMode: true,
   async rewrites() {
     return [{ source: '/en', destination: '/legacy/index.html' }]
