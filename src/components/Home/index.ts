@@ -1,0 +1,5 @@
+export { default as Hero } from './Hero'
+export { default as Testimonial } from './Testimonial'
+export { default as Method } from './Method'
+export { default as BlogPosts } from './BlogPosts'
+export { default as AboutMe } from './AboutMe'

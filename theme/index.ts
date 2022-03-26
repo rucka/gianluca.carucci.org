@@ -1,7 +1,33 @@
 import { createGlobalStyle } from 'styled-components'
 export { default as LightTheme } from './LightTheme'
+export { default as BlackWhiteTheme } from './BlackWhiteTheme'
 
 export const GlobalStyle = createGlobalStyle`
+@font-face {
+    font-family: "gateway";
+    src: url("/fonts/getaway.otf");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "scudy";
+    src: url("/fonts/Scudy.otf");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "tacenda";
+    src: url("/fonts/tacenda.otf");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
 html{
   box-sizing: border-box;
   background: ${(props) => props.theme.background};

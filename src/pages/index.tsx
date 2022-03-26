@@ -2,26 +2,14 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
+import { HeadlineImage } from '../assets/images'
+import { Header } from '../components'
 import useGeolocation from '../hooks/useGeolocation'
-
-const Header = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-  background-color: ${(props) => props.theme.invertedBackground};
-  padding: 0 20px;
-  width: 100%;
-`
-
-const Empty = styled.div``
-const TextualLogo = styled.span`
-  color: ${(props) => props.theme.invertedColor};
-  text-transform: uppercase;
-`
+import { AboutMe, BlogPosts, Hero, Method, Testimonial } from '../components/Home'
+import Footer from '../components/Footer'
 
 const HomeContainer = styled.div`
-  display: flex;
+  display: block;
 `
 
 const Home: NextPage = () => {
@@ -31,6 +19,7 @@ const Home: NextPage = () => {
     router.push('/en')
     return <></>
   }
+  console.log('HeadlineImage:', HeadlineImage)
   return (
     <HomeContainer>
       <Head>
@@ -38,11 +27,13 @@ const Home: NextPage = () => {
         <meta name="description" content="Gianluca Carucci - Software Engineer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header>
-        <Empty />
-        <TextualLogo>gianluca carucci</TextualLogo>
-        <Empty />
-      </Header>
+      <Header />
+      <Hero />
+      <Testimonial />
+      <Method />
+      <BlogPosts />
+      <AboutMe />
+      <Footer />
     </HomeContainer>
   )
 }

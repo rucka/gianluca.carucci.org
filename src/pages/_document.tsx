@@ -11,7 +11,11 @@ class Document extends NextDocument<Props> {
 const GreenFieldDocument = () => {
   return (
     <Html>
-      <Head />
+      <Head>
+      <link rel="preload" href="/fonts/getaway.otf" as="font" type="font/otf" crossOrigin="anonymous" />
+      <link rel="preload" href="/fonts/Scudy.otf" as="font" type="font/otf" crossOrigin="anonymous" />
+      <link rel="preload" href="/fonts/Tacenda.otf" as="font" type="font/otf" crossOrigin="anonymous" />
+      </Head>
       <body>
         <Main />
         <NextScript />
