@@ -5,11 +5,13 @@ import useGeolocation from '../hooks/useGeolocation'
 //@ts-ignore
 import { HeadlineImage } from '../assets/images'
 //@ts-ignore
-import { AboutMe, BlogPosts, Hero, Method, Testimonial } from '../components/Home'
+import { AboutMe, BlogPosts, Testimonial } from '../components/Home'
+import { Hero } from '../components'
 import React from 'react'
 import Layout from '../components/Layout'
 import { PostInfo, postList } from '../services/postsService'
 
+//http://www.templatemonsterpreview.com/it/demo/67126.html
 export const LayoutContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -28,8 +30,7 @@ const Home = ({ posts }: HomeProps) => {
     router.push('/en')
     return <></>
   }
-  console.log('PROPS:', posts)
-  // console.log('HeadlineImage:', HeadlineImage)
+  // console.log('PROPS:', posts)
   return (
     <>
       <Head>
@@ -38,10 +39,12 @@ const Home = ({ posts }: HomeProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        {/* <Hero />
+        <Hero />
+        <BlogPosts posts={posts} />
+        {/* 
       <Testimonial />
       <Method /> */}
-        <BlogPosts posts={posts} />
+        {/* <BlogPosts posts={posts} /> */}
         {/* <AboutMe /> */}
       </Layout>
     </>

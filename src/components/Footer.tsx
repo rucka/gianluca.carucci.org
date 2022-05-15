@@ -4,8 +4,8 @@ const HeaderContainer = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
-  background-color: ${(props) => props.theme.invertedBackground};
+  /* height: 70px;
+  background-color: ${(props) => props.theme.secondaryColor}; */
   /* padding: 0 20px; */
   width: 100%;
 `

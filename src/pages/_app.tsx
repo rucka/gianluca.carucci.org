@@ -1,11 +1,11 @@
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
-import { GlobalStyle, BlackWhiteTheme } from '../../theme'
+import { GlobalStyle, FoticoTheme } from '../../theme'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <ThemeProvider theme={BlackWhiteTheme}>
+      <ThemeProvider theme={FoticoTheme}>
         <GlobalStyle />
         <Component {...pageProps} />
       </ThemeProvider>

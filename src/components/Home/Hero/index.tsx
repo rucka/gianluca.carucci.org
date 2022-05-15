@@ -1,47 +1,35 @@
+import React from 'react'
+import { css } from 'styled-components'
 import { CoverImage } from '../../../assets/images'
-import Image from 'next/image'
-import styled from 'styled-components'
+import { HeroImage } from '../../HeroImage'
+import { Section } from '../../Section'
+import { heroHeightCss } from '../../style'
+import { Headline } from './Headline'
 
-const StyledImage = styled(Image)`
-  filter: grayscale(100%);
-  object-fit: cover;
-`
-
-const ImageFilter = styled.div`
-  background-color: black;
-  opacity: 0.01;
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-`
-
-const PairContainer = styled.div``
-const PairItemContainer = styled.div`
-  height: 348px;
-  width: 100%;
-  position: relative;
-`
-
-const Hero = () => {
+export default function Hero() {
   return (
-    <PairContainer>
-      <PairItemContainer>
-        <h1>
-          Ciao, sono Gianluca!
-          <br />
-          Aiuto sviluppatori a diventare leader tecnologici e asset strategico per le proprie aziende
-        </h1>
-        <button>scopri di più</button>
-        {/* <button>rimani aggiornato</button> */}
-      </PairItemContainer>
-      <PairItemContainer>
-        <StyledImage layout="fill" src={CoverImage.src} />
-        <ImageFilter />
-      </PairItemContainer>
-    </PairContainer>
+    <Section
+      name="home"
+      sectionNameCss={css`
+        top: calc((100% - ${(p) => p.theme.header.headerHeight}) / 2);
+      `}
+      css={css`
+        ${heroHeightCss}
+        min-height: 500px;
+      `}
+      sectionItemCss={css`
+        align-items: center;
+      `}>
+      <Headline />
+      <HeroImage
+        image={CoverImage}
+        objectPosition="50% 85%"
+        overlayCss={css`
+          background-image: linear-gradient(120deg, #ffd89b, #19547b);
+          opacity: 0.4;
+          border-radius: 2%;
+        `}
+      />
+    </Section>
   )
 }
-
-export default Hero

@@ -2,9 +2,13 @@ import 'styled-components'
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    background: string
-    color: string
-    invertedBackground: string
-    invertedColor: string
+    primaryColor: string
+    secondaryColor: string
+    black: string
+    white: string
+    disabled: string
+    error: string
+    containerMargin: string
+    header: { headerHeight: string; fontFamily: string }
   }
 }
