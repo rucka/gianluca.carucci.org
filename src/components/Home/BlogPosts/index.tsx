@@ -3,7 +3,7 @@ import { PostInfo } from '../../../services/postsService'
 import { Empty } from '../../Empty'
 import { Section } from '../../Section'
 import { FeaturePost } from './FeaturePost'
-// import { ListPosts } from './ListPosts'
+import { ListPosts } from './ListPosts'
 
 type BlogPostsProps = { posts: PostInfo[] }
 
@@ -12,7 +12,7 @@ export default function BlogPosts({ posts }: BlogPostsProps) {
     return <Empty />
   }
 
-  const [feature, ..._] = posts
+  const [feature, ...rest] = posts
 
   return (
     <Section
@@ -20,13 +20,14 @@ export default function BlogPosts({ posts }: BlogPostsProps) {
       css={css`
         margin-top: 50px;
         padding-left: 5rem;
-        /* min-height: 500px; */
+        padding-right: ${(p) => p.theme.containerMargin};
+        padding-bottom: 50px;
       `}
       sectionItemCss={css`
         justify-content: flex-start;
       `}>
       <FeaturePost post={feature} />
-      {/*<ListPosts posts={rest} /> */}
+      <ListPosts posts={rest} />
     </Section>
   )
 }

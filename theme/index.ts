@@ -4,6 +4,7 @@ import { createGlobalStyle } from 'styled-components'
 export { default as FoticoTheme } from './FoticoTheme'
 
 export const GlobalStyle = createGlobalStyle`
+
 /* @font-face {
     font-family: "gateway";
     src: url("/fonts/getaway.otf");
@@ -42,7 +43,7 @@ html{
 
 body{
   font-family: "Roboto" sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   /* background-color:#fafafa; */
   min-width:100vw;

@@ -3,15 +3,13 @@ import { useRouter } from 'next/router'
 import styled from 'styled-components'
 import useGeolocation from '../hooks/useGeolocation'
 //@ts-ignore
-import { HeadlineImage } from '../assets/images'
-//@ts-ignore
 import { AboutMe, BlogPosts, Testimonial } from '../components/Home'
 import { Hero } from '../components'
 import React from 'react'
 import Layout from '../components/Layout'
 import { PostInfo, postList } from '../services/postsService'
 
-//http://www.templatemonsterpreview.com/it/demo/67126.html
+//  
 export const LayoutContainer = styled.div`
   display: flex;
   flex-direction: column;
