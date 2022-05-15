@@ -1,14 +1,26 @@
 import { Header } from '.'
 import Footer from './Footer'
 import React from 'react'
-import { LayoutContainer, ContentContainer } from '../pages/index'
+import styled, { css, CSSProp, DefaultTheme } from 'styled-components'
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+type LayoutProps = { children: React.ReactNode; mainCss?: CSSProp<DefaultTheme> }
+
+export default function Layout({ children, mainCss }: LayoutProps) {
   return (
     <LayoutContainer>
       <Header />
-      <ContentContainer>{children}</ContentContainer>
+      <ContentContainer customCss={mainCss}>{children}</ContentContainer>
       <Footer />
     </LayoutContainer>
   )
 }
+
+const LayoutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
+const ContentContainer = styled.main<{ customCss?: CSSProp<DefaultTheme> }>`
+  flex: auto;
+  ${(p) => p.customCss ?? css``}
+`

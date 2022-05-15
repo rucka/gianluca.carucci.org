@@ -1,11 +1,16 @@
 # v1
 
-- style pagina post
-  - struttura
-  - setup markdown render style
+- ~~style pagina post~~
+  - ~~struttura~~
+  - ~~setup markdown render style~~
 - connect fbk comments
 - pagina conference con sharing code
 - migrazione posts
+- fix mobile
+- publish to gianluca.carucci.org
+
+# v1.1
+
 - menu
 - shortcut per utm params
 - link GA
@@ -19,6 +24,12 @@
 - verifica indicizzazione
 - check lighthouse e sitescore di google
 
+# v1.2
+
+- post: torna su
+- post: share buttons
+- post: style blockquote
+
 # v2
 
 - color palette
@@ -30,9 +41,12 @@
 - reorganizzazione componenti
 - aggiunta eventi GA
 - sezione testimonianze su home
-- sezione metodo su home (business/tecnologia/strategia)
+- sezione metodo su home (business/tecnologia/strategia o metodologia)
 - sezione chi sono su home
 - sezione brands su home
+- post suggeriti in pagina post
+- post: tempo di lettura
+- post: categorie (business, metodologia, strategia, tecnologia)
 
 # v3 corso javascript
 

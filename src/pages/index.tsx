@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import styled from 'styled-components'
 import useGeolocation from '../hooks/useGeolocation'
 //@ts-ignore
 import { AboutMe, BlogPosts, Testimonial } from '../components/Home'
@@ -9,16 +8,6 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { PostInfo, postList } from '../services/postsService'
 
-//  
-export const LayoutContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-`
-
-export const ContentContainer = styled.main`
-  flex: auto;
-`
 type HomeProps = { posts: PostInfo[] }
 
 const Home = ({ posts }: HomeProps) => {
@@ -28,7 +17,6 @@ const Home = ({ posts }: HomeProps) => {
     router.push('/en')
     return <></>
   }
-  // console.log('PROPS:', posts)
   return (
     <>
       <Head>
@@ -41,9 +29,8 @@ const Home = ({ posts }: HomeProps) => {
         <BlogPosts posts={posts} />
         {/* 
       <Testimonial />
-      <Method /> */}
-        {/* <BlogPosts posts={posts} /> */}
-        {/* <AboutMe /> */}
+      <Method /> 
+      <AboutMe /> */}
       </Layout>
     </>
   )
