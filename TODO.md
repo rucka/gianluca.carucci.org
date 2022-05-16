@@ -3,7 +3,7 @@
 - ~~style pagina post~~
   - ~~struttura~~
   - ~~setup markdown render style~~
-- connect fbk comments
+- ~~connect disqus comments~~
 - pagina conference con sharing code
 - migrazione posts
 - fix mobile

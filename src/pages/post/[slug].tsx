@@ -3,10 +3,11 @@ import Head from 'next/head'
 import styled, { css, CSSProp, DefaultTheme } from 'styled-components'
 import Layout from '../../components/Layout'
 import { Header, postList, readPostFromSlug } from '../../services/postsService'
+import { Comments } from '../../components'
 
-type PostProps = { header: Header; content: string }
+type PostProps = { slug: string; header: Header; content: string }
 
-export default function PostPage({ header, content }: PostProps) {
+export default function PostPage({ slug, header, content }: PostProps) {
   const mdRender = md()
   const __html = mdRender.render(content)
   return (
@@ -24,6 +25,16 @@ export default function PostPage({ header, content }: PostProps) {
           </PostHeader>
           <PostImage src={header.socialImage ?? ''} />
           <PostContent dangerouslySetInnerHTML={{ __html }} />
+          <Comments
+            identifier={slug}
+            title={header.title}
+            css={css`
+              margin-top: 5rem;
+              max-width: 760px;
+              margin-left: auto;
+              margin-right: auto;
+            `}
+          />
         </PostContainer>
       </Layout>
     </>
@@ -42,6 +53,7 @@ export async function getStaticProps({ params: { slug } }: { params: { slug: str
   const { header, content } = await readPostFromSlug(slug)
   return {
     props: {
+      slug,
       header,
       content
     }
