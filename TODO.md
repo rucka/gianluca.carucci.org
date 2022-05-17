@@ -4,7 +4,8 @@
   - ~~struttura~~
   - ~~setup markdown render style~~
 - ~~connect disqus comments~~
-- pagina conference con sharing code
+- ~~pagina conference con sharing code~~
+- ~~shortcut per utm params~~
 - migrazione posts
 - fix mobile
 - publish to gianluca.carucci.org
@@ -12,7 +13,6 @@
 # v1.1
 
 - menu
-- shortcut per utm params
 - link GA
 - link pixel facebook
 - evento scroll GA+fbk

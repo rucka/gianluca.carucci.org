@@ -25,10 +25,26 @@ const nextConfig = {
   },
   reactStrictMode: true,
   async rewrites() {
-    return [{ source: '/en', destination: '/legacy/index.html' }]
+    return [
+      { source: '/en', destination: '/legacy/index.html' },
+      {
+        source: '/conference/2022/pyconit',
+        destination: '/conference/pyconit'
+      },
+      { source: '/l/:path*', destination: '/l?:path*' }
+    ]
   },
   async redirects() {
-    return [...redirectLegacyRules]
+    return [
+      ...redirectLegacyRules,
+      ...[
+        {
+          source: '/l/pycon22/gh',
+          destination: '/l/ccpycon22',
+          permanent: true
+        }
+      ]
+    ]
   }
   //https://github.com/vercel/next.js/issues/21079
   //Remove this workaround whenever the issue is fixed
