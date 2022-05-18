@@ -11,8 +11,9 @@ export default function BlogPosts({ posts }: BlogPostsProps) {
   if (posts.length === 0) {
     return <Empty />
   }
-
-  const [feature, ...rest] = posts
+  const feature = posts[posts.length - 1]
+  const rest = posts.slice(0, -1)
+  // const [feature, ...rest] = posts
 
   return (
     <Section

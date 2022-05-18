@@ -7,6 +7,8 @@ import { Comments } from '../../components'
 
 type PostProps = { slug: string; header: Header; content: string }
 
+const COLUMN_SIZE = '650px'
+
 export default function PostPage({ slug, header, content }: PostProps) {
   const mdRender = md()
   const __html = mdRender.render(content)
@@ -30,7 +32,7 @@ export default function PostPage({ slug, header, content }: PostProps) {
             title={header.title}
             css={css`
               margin-top: 5rem;
-              max-width: 760px;
+              max-width: ${COLUMN_SIZE};
               margin-left: auto;
               margin-right: auto;
             `}
@@ -116,9 +118,23 @@ const PostContent = styled.div`
   font-family: 'Roboto', serif;
   line-height: 1.5;
 
-  max-width: 760px;
+  max-width: ${COLUMN_SIZE};
   margin-left: auto;
   margin-right: auto;
+
+  img {
+    /* margin: 3rem 0; */
+    max-width: ${COLUMN_SIZE};
+    display: block;
+    margin: 3rem auto;
+  }
+
+  a {
+    background-color: ${(p) => p.theme.black};
+    padding: 0.1rem 0.25rem;
+    color: ${(p) => p.theme.white};
+    text-decoration: none;
+  }
 
   h1,
   h2,
@@ -136,7 +152,8 @@ const PostContent = styled.div`
     margin-bottom: 3.4rem;
   }
   h2 {
-    font-size: 3.1428rem;
+    /* font-size: 3.1428rem; */
+    font-size: 2rem;
     margin-bottom: 3.4rem;
   }
   h3 {
@@ -159,17 +176,27 @@ const PostContent = styled.div`
   p {
     margin-top: 0;
     margin-bottom: 1rem;
+    font-size: 1.15rem;
+  }
+  li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
   blockquote {
-    font-family: 'Playfair Display', serif;
+    font-family: Roboto, sans-serif;
     font-size: 1.71rem;
-    font-weight: 700;
+    font-weight: 400;
     margin: 3.42rem 0 2.4rem;
-    padding-top: 4.4rem;
+    /* padding-top: 4.4rem; */
     position: relative;
     line-height: 1.6;
+    border-left: 3px rgb(208, 103, 142) dashed;
+    padding-left: 1rem;
+    background-color: #fbf6f0;
+    font-style: italic;
 
-    cite {
+    p:nth-child(2) {
+      color: #a1a1a1;
       font-family: Roboto, sans-serif;
       font-size: 1rem;
       font-style: normal;
@@ -177,8 +204,7 @@ const PostContent = styled.div`
     }
   }
 
-  pre {
-    padding: 10px;
-    border: 2px ${(p) => p.theme.black} dotted;
+  pre p {
+    font-style: italic;
   }
 `

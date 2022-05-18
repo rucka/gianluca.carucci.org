@@ -11,7 +11,6 @@ export const ShortLink = () => {
       router.push(d)
       return
     }
-    console.log(path)
   }, [])
 
   return <></>

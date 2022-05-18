@@ -6,22 +6,33 @@ export type Header = {
   metaTitle?: string
   metaDesc?: string
   socialImage?: string
-  data?: string
+  date?: string
   tags?: string[]
 }
 export type PostInfo = { slug: string; header: Header }
 
 export const postList: () => Promise<PostInfo[]> = async () => {
   const files = await readdir('posts')
-  return await Promise.all(
-    files.map(async (fileName) => {
-      const { slug, header } = await readPost(fileName)
-      return {
-        slug,
-        header
-      }
-    })
+  const posts = await Promise.all(
+    files
+      .filter((f) => f.endsWith('.md'))
+      .sort((a, b) => (a > b ? -1 : 1))
+      .map(async (fileName) => {
+        const { slug, header } = await readPost(fileName)
+        return {
+          slug,
+          header
+        }
+      })
   )
+  return posts.sort(compare)
+}
+
+const compare: (a: PostInfo, b: PostInfo) => number = (a, b) => {
+  if (!a.header.date || !b.header.date) return 0
+  const da = parseInt(a.header.date)
+  const db = parseInt(b.header.date)
+  return db - da
 }
 
 export const readPost = async (fileName: string) => {
@@ -50,7 +61,7 @@ const toHeader: (frontMatter: { [key: string]: any }) => Header = (frontMatter) 
     metaTitle?: string
     metaDesc?: string
     socialImage?: string
-    data?: string
+    date?: string
     tags?: string[]
   } = frontMatter
   return header
