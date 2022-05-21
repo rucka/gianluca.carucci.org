@@ -172,7 +172,7 @@ Certo, è Scrum!
 
 Non a caso, il burndown chart è uno strumento introdotto proprio dalle metodologie agili e da Scrum in particolare.
 
-Se non hai mai sentito parlare di Scrum e sei curioso di saperne di più, te ne ho già parlato [in questo articolo](../introduzione-a-scrum/index.html).
+Se non hai mai sentito parlare di Scrum e sei curioso di saperne di più, te ne ho già parlato [in questo articolo](./introduzione-a-scrum).
 
 > Non ci sono misteri… C’è soltanto l’insufficienza di dati o della mente
 >

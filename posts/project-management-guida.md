@@ -4,6 +4,7 @@ metaTitle: 'Come ho rivoluzionato il processo di sviluppo di una multinazionale.
 metaDesc: 'La guida definitiva per gestire progetti software rispettando tempi e scadenze, attraverso decisioni reali spiegate passo passo.'
 socialImage: /posts/project-management-guida/cover.jpg
 date: '20200524'
+feature: true
 tags:
   - projectmanagement
   - agile
@@ -665,7 +666,7 @@ Concentriamoci su quattro parole chiave:
 
 _Probabilmente ti sto raccontando qualcosa che ti suona familiare._  
 Si chiama Scrum ed è un modello di Project Management basato sui principi agili.  
-Se vuoi saperne di più ho scritto [una guida su SCRUM](../introduzione-a-scrum/index.html).
+Se vuoi saperne di più ho scritto [una guida su SCRUM](./introduzione-a-scrum).
 
 _Sembra facile, no?_
 
@@ -843,7 +844,7 @@ Pensaci.
 
 Inoltre, gestendo funzionalità più piccole godrai di maggiore libertà nel definire le priorità e **scegliere la migliore combinazione possibile che possa portare il più alto valore possibile al progetto**.
 
-[Ho scritto un post](../il-ritardo-nello-sviluppo-software/index.html) in cui ti spiego dettagliatamente attraverso esempi come creare backlog atomici ti aiuta a limitare i ritardi.
+[Ho scritto un post](./il-ritardo-nello-sviluppo-software) in cui ti spiego dettagliatamente attraverso esempi come creare backlog atomici ti aiuta a limitare i ritardi.
 
 Grazie a questo metodo, _scoprirai tra poco anche come fare stime attendibili senza l’aiuto di un tecnico._
 
@@ -1412,7 +1413,7 @@ Quando guardi i burndown chart puoi ritrovarti in una di queste tre situazioni:
 - il remain work è sotto il punto ideale: **sei in anticipo**
 - il remain work è uguale al punto ideale: **sei in linea con la pianificazione**
 
-Se ti sei perso non preoccuparti. [Ho scritto un post su questo grafico](../scrum-burndown-chart/index.html) che ti spiega passo passo come costruirlo.
+Se ti sei perso non preoccuparti. [Ho scritto un post su questo grafico](./scrum-burndown-chart) che ti spiega passo passo come costruirlo.
 
 **Il burndown chart è un tool di controllo così potente che non puoi non introdurre nel tuo team.**
 

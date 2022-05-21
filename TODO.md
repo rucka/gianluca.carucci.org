@@ -6,13 +6,14 @@
 - ~~connect disqus comments~~
 - ~~pagina conference con sharing code~~
 - ~~shortcut per utm params~~
-- migrazione posts
+- ~~migrazione posts~~
+- gestione del feature post
 - fix mobile
+- menu
 - publish to gianluca.carucci.org
 
 # v1.1
 
-- menu
 - link GA
 - link pixel facebook
 - evento scroll GA+fbk
