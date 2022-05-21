@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import styled from 'styled-components'
 import { InstagramIcon, LinkedinIcon, MediumIcon, TwitterIcon, GithubIcon } from '../assets/icons'
 import { LogoText } from './Logo'
@@ -27,11 +28,24 @@ const SocialLink = styled.a`
   }
 `
 
+const LogoLink = styled.a`
+  cursor: pointer;
+`
+
 const Footer = () => {
+  const { route, push } = useRouter()
+  const Logo = () => <LogoText>GC</LogoText>
+
   return (
     <FooterWrapper>
       <Container>
-        <LogoText>GC</LogoText>
+        {route === '/' ? (
+          <Logo />
+        ) : (
+          <LogoLink onClick={() => push('/')}>
+            <Logo />
+          </LogoLink>
+        )}
         <Socials>
           <SocialLink href="https://www.instagram.com/gianlucacarucci5/" target="_blank">
             <InstagramIcon />

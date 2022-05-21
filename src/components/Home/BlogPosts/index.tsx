@@ -11,9 +11,11 @@ export default function BlogPosts({ posts }: BlogPostsProps) {
   if (posts.length === 0) {
     return <Empty />
   }
-  const feature = posts[posts.length - 1]
-  const rest = posts.slice(0, -1)
-  // const [feature, ...rest] = posts
+  const all = splitFeaturedAndRest(posts)
+  if (!all) {
+    return <Empty />
+  }
+  const { featured, rest } = all
 
   return (
     <Section
@@ -27,8 +29,18 @@ export default function BlogPosts({ posts }: BlogPostsProps) {
       sectionItemCss={css`
         justify-content: flex-start;
       `}>
-      <FeaturePost post={feature} />
+      <FeaturePost post={featured} />
       <ListPosts posts={rest} />
     </Section>
   )
+}
+
+const splitFeaturedAndRest: (posts: PostInfo[]) => { featured: PostInfo; rest: PostInfo[] } | undefined = (posts) => {
+  if (posts.length === 0) {
+    return
+  }
+  const featureds = posts.filter((p) => p.header.featured)
+  const featured = featureds.length > 0 ? featureds[0] : posts[posts.length - 1]
+  const rest = posts.filter((p) => p != featured)
+  return { featured, rest }
 }

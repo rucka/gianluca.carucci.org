@@ -4,7 +4,7 @@ metaTitle: 'Come ho rivoluzionato il processo di sviluppo di una multinazionale.
 metaDesc: 'La guida definitiva per gestire progetti software rispettando tempi e scadenze, attraverso decisioni reali spiegate passo passo.'
 socialImage: /posts/project-management-guida/cover.jpg
 date: '20200524'
-feature: true
+featured: true
 tags:
   - projectmanagement
   - agile

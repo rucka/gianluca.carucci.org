@@ -1,7 +1,10 @@
+import { useRouter } from 'next/router'
 import styled from 'styled-components'
+import { CallToAction } from '../../CallToAction'
 // import { CallToAction } from '../../CallToAction'
 
 export function Headline() {
+  const { push } = useRouter()
   return (
     <Container>
       <TitleOverhead>ciao, sono Gianluca!</TitleOverhead>
@@ -10,6 +13,7 @@ export function Headline() {
       </TitleHorizontalLine>
       <ClaimContainer>
         <Claim>
+          Tutto quello che devi sapere del mondo dell'Information Technology e che nessuno ha mai voluto raccontarti.
           {/* Condividerò con te tutti i miei <b>20 anni di esperienza</b> nel mondo dell'<b>information technology </b>
           come <b>nessuno</b> ha mai fatto prima.
           <br />
@@ -17,7 +21,7 @@ export function Headline() {
           <br />
           Ed è completamente <b>gratuito</b>. */}
         </Claim>
-        {/* <CallToAction onClick={() => console.log('click...')} text="scopri come" /> */}
+        <CallToAction onClick={() => push('/post/project-management-guida')} text="inizia da qui" />
       </ClaimContainer>
     </Container>
   )

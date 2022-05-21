@@ -7,9 +7,10 @@
 - ~~pagina conference con sharing code~~
 - ~~shortcut per utm params~~
 - ~~migrazione posts~~
-- gestione del feature post
-- fix mobile
+- ~~gestione del feature post~~
+- ~~link logo~~
 - menu
+- fix mobile
 - publish to gianluca.carucci.org
 
 # v1.1

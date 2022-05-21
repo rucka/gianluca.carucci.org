@@ -7,6 +7,7 @@ export type Header = {
   metaDesc?: string
   socialImage?: string
   date?: string
+  featured?: boolean
   tags?: string[]
 }
 export type PostInfo = { slug: string; header: Header }

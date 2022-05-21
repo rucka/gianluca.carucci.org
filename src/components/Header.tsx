@@ -1,10 +1,11 @@
-import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
 import styled from 'styled-components'
-import { Empty } from './Empty'
-import { HamburgerMenu } from './HamburgerMenu'
 import { Logo } from './Logo'
+// import Link from 'next/link'
+// import { useRouter } from 'next/router'
+// import { useState } from 'react'
+// import { Empty } from './Empty'
+// import { HamburgerMenu } from './HamburgerMenu'
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -28,28 +29,38 @@ const Right = styled.div`
   padding: 0 ${({ theme }) => theme.containerMargin};
 `
 
-export function Header() {
-  const [opened, setOpened] = useState<boolean>(false)
+const LogoLink = styled.a`
+  cursor: pointer;
+`
 
+export function Header() {
+  const { push, route } = useRouter()
+  // const [opened, setOpened] = useState<boolean>(false)
   return (
     <HeaderContainer>
       <Left>
-        <Logo />
+        {route === '/' ? (
+          <Logo />
+        ) : (
+          <LogoLink onClick={() => push('/')}>
+            <Logo />
+          </LogoLink>
+        )}
       </Left>
       <Right>
-        <HamburgerMenu opened={opened} onToggle={() => setOpened(!opened)}>
+        {/* <HamburgerMenu opened={opened} onToggle={() => setOpened(!opened)}>
           <Home />
-        </HamburgerMenu>
+        </HamburgerMenu>*/}
       </Right>
     </HeaderContainer>
   )
 }
 
-const Home = () => {
-  const { route } = useRouter()
+// const Home = () => {
+//   const { route } = useRouter()
 
-  if (route === '/') {
-    return <Empty />
-  }
-  return <Link href={'/'}>Home</Link>
-}
+//   if (route === '/') {
+//     return <Empty />
+//   }
+//   return <Link href={'/'}>Home</Link>
+// }
