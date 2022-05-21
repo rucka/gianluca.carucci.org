@@ -4,6 +4,7 @@ import { GithubIcon, SlideIcon, TextIcon } from '../../assets/icons'
 import { Pyconit } from '../../assets/images'
 import Layout from '../../components/Layout'
 import { Section } from '../../components/Section'
+import { device } from '../../device'
 
 export default function ConferencePage() {
   const [showSlide, setShowSlide] = useState(false)
@@ -30,10 +31,13 @@ export default function ConferencePage() {
           name={talk.conference}
           css={css`
             font-family: 'Roboto', serif;
-            padding-left: 5rem;
-            padding-right: 5rem;
             padding-bottom: 5rem;
-          `}>
+            @media ${device.laptop} {
+              padding-left: 5rem;
+              padding-right: 5rem;
+            }
+          `}
+          sectionItemCss={css``}>
           <Container>
             <Title>{talk.title}</Title>
             <Tags>
@@ -84,13 +88,21 @@ const Container = styled.div`
 `
 
 const Content = styled.div`
-  margin-top: 3rem;
-  max-width: 710px;
   margin-left: auto;
   margin-right: auto;
+  width: 70%;
+  @media ${device.laptop} {
+    max-width: 710px;
+    width: unset;
+  }
 `
 
-const Sidebar = styled.div``
+const Sidebar = styled.div`
+  padding: 3rem 0;
+  @media ${device.laptop} {
+    padding: unset;
+  }
+`
 const ResourceBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -157,15 +169,27 @@ const Abstract = styled.div<{ visible: boolean }>`
 
 const Title = styled.h2`
   font-family: 'Playfair Display', serif;
-  font-size: 3.8571rem;
+  font-size: 2rem;
+  text-align: center;
   font-weight: 700;
   line-height: 1.2;
   max-width: 710px;
   margin-top: 0;
+  padding: 0 2rem;
+  @media ${device.laptop} {
+    padding: unset;
+    font-size: 3.8571rem;
+  }
 `
 
 const Tags = styled.div`
   display: flex;
+  padding: 1rem 2rem;
+  justify-content: center;
+  @media ${device.desktop} {
+    padding: unset;
+    justify-content: unset;
+  }
 `
 
 const Tag = styled.span`

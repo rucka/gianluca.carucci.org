@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 import { HamburgerButton } from './HamburgerButton'
 
 const Navigator = styled.nav`
+  position: absolute;
   padding-left: 20px;
 `
 

@@ -1,11 +1,10 @@
+import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 import styled from 'styled-components'
+import { Empty } from './Empty'
+import { HamburgerMenu } from './HamburgerMenu'
 import { Logo } from './Logo'
-// import Link from 'next/link'
-// import { useRouter } from 'next/router'
-// import { useState } from 'react'
-// import { Empty } from './Empty'
-// import { HamburgerMenu } from './HamburgerMenu'
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -33,9 +32,17 @@ const LogoLink = styled.a`
   cursor: pointer;
 `
 
+const routes = [
+  { url: '/', label: 'Home' },
+  { url: '/post/project-management-guida', label: 'INIZIA DA QUI' },
+  { url: '/conference/pyconit', label: 'Pycon IT 2022' },
+  { url: '/post/introduzione-a-scrum', label: 'Scrum' }
+]
+
 export function Header() {
   const { push, route } = useRouter()
-  // const [opened, setOpened] = useState<boolean>(false)
+  const [opened, setOpened] = useState<boolean>(false)
+
   return (
     <HeaderContainer>
       <Left>
@@ -48,19 +55,20 @@ export function Header() {
         )}
       </Left>
       <Right>
-        {/* <HamburgerMenu opened={opened} onToggle={() => setOpened(!opened)}>
-          <Home />
-        </HamburgerMenu>*/}
+        <HamburgerMenu opened={opened} onToggle={() => setOpened(!opened)}>
+          {routes.map(({ url, label }) => (
+            <LinkElement key={url} slug={url} label={label} />
+          ))}
+        </HamburgerMenu>
       </Right>
     </HeaderContainer>
   )
 }
 
-// const Home = () => {
-//   const { route } = useRouter()
-
-//   if (route === '/') {
-//     return <Empty />
-//   }
-//   return <Link href={'/'}>Home</Link>
-// }
+const LinkElement = ({ slug: url, label }: { slug: string; label: string }) => {
+  const { asPath } = useRouter()
+  if (asPath === `${url}`) {
+    return <Empty />
+  }
+  return <Link href={`${url}`}>{label}</Link>
+}

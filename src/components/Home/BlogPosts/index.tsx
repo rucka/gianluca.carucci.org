@@ -1,4 +1,5 @@
 import { css } from 'styled-components'
+import { device } from '../../../device'
 import { PostInfo } from '../../../services/postsService'
 import { Empty } from '../../Empty'
 import { Section } from '../../Section'
@@ -22,12 +23,27 @@ export default function BlogPosts({ posts }: BlogPostsProps) {
       name="blog"
       css={css`
         margin-top: 50px;
-        padding-left: 5rem;
-        padding-right: ${(p) => p.theme.containerMargin};
+        padding-left: 3rem;
+        padding-right: 1rem;
         padding-bottom: 50px;
+        @media ${device.tablet} {
+          padding-right: 5rem;
+        }
+        @media ${device.laptop} {
+          padding-right: 5rem;
+        }
       `}
       sectionItemCss={css`
-        justify-content: flex-start;
+        &:nth-child(3) {
+          margin-top: 4rem;
+          @media ${device.laptop} {
+            margin-top: 0;
+          }
+        }
+        @media ${device.desktop} {
+          justify-content: flex-start;
+          padding-right: ${(p) => p.theme.containerMargin};
+        }
       `}>
       <FeaturePost post={featured} />
       <ListPosts posts={rest} />

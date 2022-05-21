@@ -1,6 +1,7 @@
 import React from 'react'
 import { css } from 'styled-components'
 import { CoverImage } from '../../../assets/images'
+import { device } from '../../../device'
 import { HeroImage } from '../../HeroImage'
 import { Section } from '../../Section'
 import { heroHeightCss } from '../../style'
@@ -11,11 +12,20 @@ export default function Hero() {
     <Section
       name="home"
       sectionNameCss={css`
-        top: calc((100% - ${(p) => p.theme.header.headerHeight}) / 2);
+        @media ${device.laptop} {
+          top: calc((100% - ${(p) => p.theme.header.headerHeight}) / 2);
+        }
       `}
       css={css`
         ${heroHeightCss}
-        min-height: 500px;
+        padding-right: 1rem;
+
+        @media ${device.tablet} {
+          min-height: 600px;
+        }
+        @media ${device.laptop} {
+          min-height: 600px;
+        }
       `}
       sectionItemCss={css`
         align-items: center;

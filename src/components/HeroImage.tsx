@@ -1,6 +1,7 @@
 import styled, { css, CSSProp, DefaultTheme, FlattenInterpolation, ThemeProps } from 'styled-components'
 import Image, { ImageProps } from 'next/image'
 import { createOverlay } from './style'
+import { device } from '../device'
 
 type HeroImageProps = { image: StaticImageData; overlayCss?: CSSProp<DefaultTheme> | undefined } & Omit<
   ImageProps,
@@ -31,6 +32,10 @@ const ImageContainer = styled.div<{ customCss: FlattenInterpolation<ThemeProps<D
   position: relative;
   img {
     border-radius: 2%;
+  }
+  @media ${device.tablet} {
+    min-height: 591px;
+    margin: 5rem;
   }
   ${(p) => p.customCss ?? css``}
 `

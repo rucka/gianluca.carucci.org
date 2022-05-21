@@ -49,11 +49,15 @@ const SectionName = styled.span<{ customCss: CSSProp<DefaultTheme> | undefined }
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90px;
+  width: 50px;
   z-index: 2;
   box-align: center;
   box-pack: center;
   flex-flow: column;
+
+  @media ${device.laptop} {
+    width: 90px;
+  }
 
   &:before {
     content: attr(data-index);
@@ -79,55 +83,3 @@ const SectionName = styled.span<{ customCss: CSSProp<DefaultTheme> | undefined }
 
   ${({ customCss }) => customCss ?? css``}
 `
-
-/*
-
-@media (max-width: 1023px)
-.u-index {
-    width: fit-content;
-    font-size: 9px;
-}
-
-@media screen and (min-width: 375px) and (min-width: 375px)
-.u-index {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90px;
-    z-index: 2;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    flex-flow: column;
-}
-
-@media (max-width: 1023px)
-.u-index:before {
-    padding: 10px;
-}
-@media screen and (min-width: 375px) and (min-width: 375px)
-.u-index:before {
-    content: attr(data-index);
-    position: relative;
-    color: #2b2f3b;
-    text-transform: uppercase;
-    padding: 20px;
-    transform: rotate(180deg);
-    -ms-transform: rotate(-90deg);
-    z-index: 1;
-    writing-mode: vertical-rl;
-    -ms-transform-origin: right top;
-}
-.u-index:after {
-    content: "";
-    width: 1px;
-    background-color: #2b2f3b;
-    z-index: 1;
-    flex: 1;
-}
-*/

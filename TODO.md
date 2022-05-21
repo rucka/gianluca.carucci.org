@@ -9,9 +9,8 @@
 - ~~migrazione posts~~
 - ~~gestione del feature post~~
 - ~~link logo~~
-- menu
-- fix mobile
-- publish to gianluca.carucci.org
+- ~~fix mobile~~
+- ~~menu~~
 
 # v1.1
 
@@ -21,6 +20,7 @@
 - evento page view GA+fbk
 - evento tempo trascorso GA+fbk
 - evento click GA+fbk
+- publish to gianluca.carucci.org
 - pagina contatti con form mailchip
 - metadata sharing linkedin / facebook per post e pagina + application/ld+json + robots + article publish info
 - verifica indicizzazione

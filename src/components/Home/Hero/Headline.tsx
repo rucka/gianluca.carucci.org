@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
+import { device } from '../../../device'
 import { CallToAction } from '../../CallToAction'
-// import { CallToAction } from '../../CallToAction'
 
 export function Headline() {
   const { push } = useRouter()
@@ -33,10 +33,12 @@ const Container = styled.div`
   justify-content: center;
   width: 100%;
   font-size: 14px;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 3rem;
   max-width: 1530px;
   font-family: 'Roboto', sans-serif;
+  @media ${device.laptop} {
+    padding-left: 5rem;
+  }
 `
 
 const TitleOverhead = styled.h6`
@@ -45,24 +47,49 @@ const TitleOverhead = styled.h6`
   letter-spacing: 0.2rem;
   line-height: 1.2;
   font-weight: 400;
-  margin-bottom: 1rem;
   text-transform: uppercase;
+  margin-top: 0;
+  @media ${device.laptop} {
+    margin-bottom: 1rem;
+  }
 `
 
 const TitleHorizontalLine = styled.h1`
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   line-height: 1.2;
-  font-size: 3.8571rem;
   margin-top: 0;
+  font-size: 2.3rem;
+
+  @media ${device.tablet} {
+    font-size: 3.5571rem;
+  }
+
+  @media (orientation: landscape) {
+    font-size: 2.5rem;
+  }
+
+  @media ${device.laptop} {
+    font-size: 3.5571rem;
+  }
 `
 
 const ClaimContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   padding-left: 12%;
+  margin-top: 2rem;
+  @media ${device.laptop} {
+    margin-top: 0;
+  }
 `
 
 const Claim = styled.p`
-  margin-bottom: 1rem;
   width: 70%;
   line-height: 1.9;
+  display: none;
+  margin-bottom: 1 rem;
+  @media ${device.tablet} {
+    display: unset;
+  }
 `

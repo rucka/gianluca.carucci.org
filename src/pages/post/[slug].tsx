@@ -4,10 +4,11 @@ import styled, { css, CSSProp, DefaultTheme } from 'styled-components'
 import Layout from '../../components/Layout'
 import { Header, postList, readPostFromSlug } from '../../services/postsService'
 import { Comments } from '../../components'
+import { device } from '../../device'
 
 type PostProps = { slug: string; header: Header; content: string }
 
-const COLUMN_SIZE = '650px'
+const DESKTOP_COLUMN_SIZE = '650px'
 
 export default function PostPage({ slug, header, content }: PostProps) {
   const mdRender = md()
@@ -32,9 +33,11 @@ export default function PostPage({ slug, header, content }: PostProps) {
             title={header.title}
             css={css`
               margin-top: 5rem;
-              max-width: ${COLUMN_SIZE};
               margin-left: auto;
               margin-right: auto;
+              @media ${device.laptop} {
+                max-width: ${DESKTOP_COLUMN_SIZE};
+              }
             `}
           />
         </PostContainer>
@@ -65,11 +68,16 @@ export async function getStaticProps({ params: { slug } }: { params: { slug: str
 const mainCss: CSSProp<DefaultTheme> = css`
   /* margin-top: 60px; */
   max-width: 1140px;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 3rem;
+  padding-left: 3rem;
   margin-right: auto;
   margin-left: auto;
+
+  @media ${device.laptop} {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+  }
 `
 
 const PostContainer = styled.div`
@@ -93,14 +101,19 @@ const PostHeader = styled.header`
 
 const PostTitle = styled.h2`
   font-family: 'Playfair Display', serif;
-  font-size: 3.8571rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 30px;
   text-align: center;
   position: relative;
-  font-size: 3.8571rem;
+  @media ${device.tablet} {
+    font-size: 3.8571rem;
+  }
+  @media ${device.laptop} {
+    font-size: 3.8571rem;
+  }
 `
 
 const PostImage = styled.img`
@@ -118,13 +131,17 @@ const PostContent = styled.div`
   font-family: 'Roboto', serif;
   line-height: 1.5;
 
-  max-width: ${COLUMN_SIZE};
   margin-left: auto;
   margin-right: auto;
+  @media ${device.laptop} {
+    max-width: ${DESKTOP_COLUMN_SIZE};
+  }
 
   img {
-    /* margin: 3rem 0; */
-    max-width: ${COLUMN_SIZE};
+    width: 100%;
+    @media ${device.laptop} {
+      max-width: ${DESKTOP_COLUMN_SIZE};
+    }
     display: block;
     margin: 3rem auto;
   }

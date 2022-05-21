@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styled from 'styled-components'
+import { device } from '../../../device'
 import { PostInfo } from '../../../services/postsService'
 
 export const ListPosts = ({ posts }: { posts: PostInfo[] }) => {
@@ -17,8 +18,10 @@ export const ListPosts = ({ posts }: { posts: PostInfo[] }) => {
 
 const BlogPostsCardContainer = styled.div`
   font-family: 'Roboto', sans-serif;
-  padding-left: 10rem;
   width: 100%;
+  @media ${device.desktop} {
+    padding-left: 10rem;
+  }
 `
 
 const Header = styled.div`
@@ -51,10 +54,13 @@ const PostItem = ({ post }: { post: PostInfo }) => {
 const PostItemWrapper = styled.div`
   cursor: pointer;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   margin-bottom: 1rem;
-  padding: 1rem;
+
+  @media ${device.laptop} {
+    flex-direction: row;
+  }
 
   &:hover {
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
@@ -62,14 +68,21 @@ const PostItemWrapper = styled.div`
 `
 
 const PostText = styled.div`
-  padding-left: 1rem;
+  @media ${device.laptop} {
+    padding-left: 1rem;
+  }
 `
 
 const PostThumb = styled.img`
   margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 100px;
   height: 100px;
   filter: grayscale();
+
+  @media ${device.laptop} {
+    margin-bottom: unset;
+  }
 `
 const PostTitle = styled.h3`
   font-family: 'Playfair Display', serif;
