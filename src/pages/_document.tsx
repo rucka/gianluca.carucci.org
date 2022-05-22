@@ -1,5 +1,6 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 import React from 'react'
+import { GTMBody, GTMScript } from '../components'
 
 type Props = {}
 class Document extends NextDocument<Props> {
@@ -7,11 +8,11 @@ class Document extends NextDocument<Props> {
     return <GreenFieldDocument />
   }
 }
-
 const GreenFieldDocument = () => {
   return (
     <Html>
       <Head>
+        <GTMScript />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link
@@ -20,6 +21,7 @@ const GreenFieldDocument = () => {
         />
       </Head>
       <body>
+        <GTMBody />
         <Main />
         <NextScript />
       </body>

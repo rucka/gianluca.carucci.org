@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { useState } from 'react'
 import styled from 'styled-components'
+import { useRouter } from '../hooks/useRouter'
+import { ALink } from './ALink'
 import { Empty } from './Empty'
 import { HamburgerMenu } from './HamburgerMenu'
 import { Logo } from './Logo'
@@ -40,7 +40,7 @@ const routes = [
 ]
 
 export function Header() {
-  const { push, route } = useRouter()
+  const { goto, route } = useRouter()
   const [opened, setOpened] = useState<boolean>(false)
 
   return (
@@ -49,7 +49,7 @@ export function Header() {
         {route === '/' ? (
           <Logo />
         ) : (
-          <LogoLink onClick={() => push('/')}>
+          <LogoLink onClick={() => goto('/')}>
             <Logo />
           </LogoLink>
         )}
@@ -70,5 +70,5 @@ const LinkElement = ({ slug: url, label }: { slug: string; label: string }) => {
   if (asPath === `${url}`) {
     return <Empty />
   }
-  return <Link href={`${url}`}>{label}</Link>
+  return <ALink href={`${url}`}>{label}</ALink>
 }

@@ -1,10 +1,10 @@
-import { useRouter } from 'next/router'
 import styled from 'styled-components'
 import { device } from '../../../device'
+import { useRouter } from '../../../hooks/useRouter'
 import { CallToAction } from '../../CallToAction'
 
 export function Headline() {
-  const { push } = useRouter()
+  const { goto } = useRouter()
   return (
     <Container>
       <TitleOverhead>ciao, sono Gianluca!</TitleOverhead>
@@ -21,7 +21,7 @@ export function Headline() {
           <br />
           Ed è completamente <b>gratuito</b>. */}
         </Claim>
-        <CallToAction onClick={() => push('/post/project-management-guida')} text="inizia da qui" />
+        <CallToAction onClick={() => goto('/post/project-management-guida')} text="inizia da qui" />
       </ClaimContainer>
     </Container>
   )

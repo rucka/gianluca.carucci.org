@@ -1,5 +1,5 @@
-import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import { useRouter } from '../hooks/useRouter'
 
 export const ShortLink = () => {
   const router = useRouter()
@@ -8,7 +8,7 @@ export const ShortLink = () => {
     const path = normalizePath(window.location.pathname.toLowerCase())
     const d = redirectTo(path)
     if (d) {
-      router.push(d)
+      router.goto(d)
       return
     }
   }, [])

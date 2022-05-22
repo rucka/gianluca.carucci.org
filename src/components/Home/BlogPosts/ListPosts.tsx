@@ -1,7 +1,7 @@
-import Link from 'next/link'
 import styled from 'styled-components'
 import { device } from '../../../device'
 import { PostInfo } from '../../../services/postsService'
+import { ALink } from '../../ALink'
 
 export const ListPosts = ({ posts }: { posts: PostInfo[] }) => {
   return (
@@ -39,7 +39,7 @@ const Header = styled.div`
 
 const PostItem = ({ post }: { post: PostInfo }) => {
   return (
-    <Link href={`/post/${post.slug}`} passHref>
+    <ALink href={`/post/${post.slug}`} passHref>
       <PostItemWrapper>
         <PostThumb src={post.header.socialImage} />
         <PostText>
@@ -47,7 +47,7 @@ const PostItem = ({ post }: { post: PostInfo }) => {
           <PostDescription>{post.header.metaDesc}</PostDescription>
         </PostText>
       </PostItemWrapper>
-    </Link>
+    </ALink>
   )
 }
 

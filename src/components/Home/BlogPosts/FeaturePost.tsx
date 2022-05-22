@@ -1,12 +1,12 @@
-import Link from 'next/link'
 import styled, { css } from 'styled-components'
 import { device } from '../../../device'
 import { PostInfo } from '../../../services/postsService'
+import { ALink } from '../../ALink'
 import { createOverlay } from '../../style'
 
 export const FeaturePost = ({ post }: { post: PostInfo }) => {
   return (
-    <Link href={`/post/${post.slug}`} key={post.slug} passHref>
+    <ALink href={`/post/${post.slug}`} key={post.slug} passHref>
       <Card imageSrc={post.header.socialImage}>
         <CardHighlight>
           <span>in evidenza</span>
@@ -16,7 +16,7 @@ export const FeaturePost = ({ post }: { post: PostInfo }) => {
         </CardTitle>
         <CardInfo>{post.header.metaDesc}</CardInfo>
       </Card>
-    </Link>
+    </ALink>
   )
 }
 

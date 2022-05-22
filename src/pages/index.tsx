@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 import useGeolocation from '../hooks/useGeolocation'
 //@ts-ignore
 import { AboutMe, BlogPosts, Testimonial } from '../components/Home'
@@ -7,6 +6,7 @@ import { Hero } from '../components'
 import React from 'react'
 import Layout from '../components/Layout'
 import { PostInfo, postList } from '../services/postsService'
+import { useRouter } from '../hooks/useRouter'
 
 type HomeProps = { posts: PostInfo[] }
 
@@ -14,7 +14,7 @@ const Home = ({ posts }: HomeProps) => {
   const { country } = useGeolocation()
   const router = useRouter()
   if (country && country !== 'it') {
-    router.push('/en')
+    router.goto('/en')
     return <></>
   }
   return (

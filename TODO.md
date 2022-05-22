@@ -14,18 +14,17 @@
 
 # v1.1
 
-- link GA
-- link pixel facebook
-- evento scroll GA+fbk
-- evento page view GA+fbk
-- evento tempo trascorso GA+fbk
-- evento click GA+fbk
-- publish to gianluca.carucci.org
-- pagina contatti con form mailchip
+- ~~link GA~~
+- ~~link pixel facebook~~
+- ~~evento scroll GA+fbk~~
+- ~~evento page view GA+fbk~~
+- ~~evento tempo trascorso GA+fbk~~
+- ~~evento click GA+fbk~~
 - metadata sharing linkedin / facebook per post e pagina + application/ld+json + robots + article publish info
+- publish to gianluca.carucci.org
+- pagina contatti con form mailchip + lead tracking
 - verifica indicizzazione
 - check lighthouse e sitescore di google
-
 # v1.2
 
 - post: torna su

@@ -24,9 +24,10 @@ export default function BlogPosts({ posts }: BlogPostsProps) {
       css={css`
         margin-top: 50px;
         padding-left: 3rem;
-        padding-right: 1rem;
+        padding-right: 3rem;
         padding-bottom: 50px;
         @media ${device.tablet} {
+          padding-left: 5rem;
           padding-right: 5rem;
         }
         @media ${device.laptop} {

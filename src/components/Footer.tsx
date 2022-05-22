@@ -1,6 +1,7 @@
-import { useRouter } from 'next/router'
 import styled from 'styled-components'
 import { InstagramIcon, LinkedinIcon, MediumIcon, TwitterIcon, GithubIcon } from '../assets/icons'
+import { device } from '../device'
+import { useRouter } from '../hooks/useRouter'
 import { LogoText } from './Logo'
 
 const FooterWrapper = styled.footer`
@@ -15,7 +16,10 @@ const Container = styled.div`
 
 const Socials = styled.div``
 const SocialLink = styled.a`
-  margin: 0 0.5rem;
+  margin: 0 0.3rem;
+  @media ${device.tablet} {
+    margin: 0 0.5rem;
+  }
   svg {
     cursor: pointer;
     width: 25px;
@@ -33,7 +37,7 @@ const LogoLink = styled.a`
 `
 
 const Footer = () => {
-  const { route, push } = useRouter()
+  const { route, goto } = useRouter()
   const Logo = () => <LogoText>GC</LogoText>
 
   return (
@@ -42,7 +46,7 @@ const Footer = () => {
         {route === '/' ? (
           <Logo />
         ) : (
-          <LogoLink onClick={() => push('/')}>
+          <LogoLink onClick={() => goto('/')}>
             <Logo />
           </LogoLink>
         )}
