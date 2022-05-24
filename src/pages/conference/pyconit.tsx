@@ -1,10 +1,14 @@
+import { NextSeo } from 'next-seo'
 import { useState } from 'react'
 import styled, { css } from 'styled-components'
 import { GithubIcon, SlideIcon, TextIcon } from '../../assets/icons'
 import { Pyconit } from '../../assets/images'
+import { AllJsonLd } from '../../components'
+import { fullname } from '../../components/AllJsonLd'
 import Layout from '../../components/Layout'
 import { Section } from '../../components/Section'
 import { device } from '../../device'
+import SEO from '../../next-seo.config'
 
 export default function ConferencePage() {
   const [showSlide, setShowSlide] = useState(false)
@@ -26,6 +30,7 @@ export default function ConferencePage() {
 
   return (
     <>
+      <ConferenceSEO />
       <Layout>
         <Section
           name={talk.conference}
@@ -79,6 +84,77 @@ export default function ConferencePage() {
           </Sidebar>
         </Section>
       </Layout>
+    </>
+  )
+}
+
+const ConferenceSEO = () => {
+  const slug = '2020/pyconit'
+  const url = `${SEO.openGraph?.url}conference/${slug}`
+  const title = talk.title
+  const description = talk.abstract
+  const datePublished = '2022-05-024T00:00:01+02:00'
+  const dateModified = datePublished
+  const images = SEO.openGraph?.images ?? []
+  const imageUrl = images[0].url
+  return (
+    <>
+      <NextSeo
+        title={title}
+        description={description}
+        openGraph={{
+          url,
+          images: SEO.openGraph?.images
+        }}
+        additionalMetaTags={[
+          {
+            property: 'twitter:title',
+            content: title
+          },
+          {
+            property: 'twitter:description',
+            content: description
+          },
+          {
+            property: 'twitter:image',
+            content: imageUrl
+          },
+          {
+            property: 'article:publisher',
+            content: 'https://www.facebook.com/caruccigianluca'
+          },
+          {
+            property: 'article:published_time',
+            content: datePublished
+          },
+          {
+            property: 'article:modified_time',
+            content: dateModified
+          }
+        ]}
+      />
+      <AllJsonLd
+        webpage={{
+          url,
+          title,
+          description,
+          datePublished,
+          dateModified
+        }}
+        additionalType={{
+          '@type': 'Article',
+          headline: title,
+          datePublished,
+          dateModified,
+          author: { '@type': 'Person', name: fullname },
+          name: title,
+          '@id': 'http://gianluca.carucci.org/#schema-1679352',
+          isPartOf: { '@id': `${SEO.openGraph?.url}#webpage` },
+          publisher: { '@id': `${SEO.openGraph?.url}#person` },
+          inLanguage: 'it-IT',
+          mainEntityOfPage: { '@id': `${SEO.openGraph?.url}#webpage` }
+        }}
+      />
     </>
   )
 }

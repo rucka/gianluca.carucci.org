@@ -1,4 +1,4 @@
-import { readdir, readFile } from 'fs/promises'
+import { readdir, readFile, stat } from 'fs/promises'
 import matter from 'gray-matter'
 
 export type Header = {
@@ -7,6 +7,7 @@ export type Header = {
   metaDesc?: string
   socialImage?: string
   date?: string
+  modifiedDate: string
   featured?: boolean
   tags?: string[]
 }
@@ -37,10 +38,13 @@ const compare: (a: PostInfo, b: PostInfo) => number = (a, b) => {
 }
 
 export const readPost = async (fileName: string) => {
-  const fileData = await readFile(`posts/${fileName}`, 'utf-8')
+  const path = `posts/${fileName}`
+  const fileData = await readFile(path, 'utf-8')
+  const mtime = (await stat(path)).mtime
+
   const { data: frontmatter, content } = matter(fileData)
   const slug = fileName.replace('.md', '')
-  return { slug, header: toHeader(frontmatter), content }
+  return { slug, header: toHeader(frontmatter, mtime), content }
 }
 
 export const readPostFromSlug = async (slug: string) => {
@@ -56,14 +60,15 @@ export const readPostContent = async (fileName: string) => {
   return content
 }
 
-const toHeader: (frontMatter: { [key: string]: any }) => Header = (frontMatter) => {
+const toHeader: (frontMatter: { [key: string]: any }, modifiedDate: Date) => Header = (frontMatter, modifiedDate) => {
   const header: {
     title?: string
     metaTitle?: string
     metaDesc?: string
     socialImage?: string
     date?: string
+    modifiedDate: string
     tags?: string[]
-  } = frontMatter
+  } = { ...frontMatter, ...{ modifiedDate: modifiedDate.toISOString() } }
   return header
 }

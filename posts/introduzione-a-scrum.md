@@ -1,6 +1,6 @@
 ---
 title: 'Scopri cos’è SCRUM e come può esserti utile'
-metaTitle: 'Scopri cos’è SCRUM e come può esserti utile'
+metaTitle: "Cos'è SCRUM e come può esserti utile"
 metaDesc: 'SCRUM spiegato semplice con esempi presi dalla vita reale. Non è la soluzione a tutti i mali: prima di adottarlo, devi comprenderlo fino in fondo.'
 socialImage: /posts/introduzione-a-scrum/feature-image.jpg
 date: '20200524'

@@ -36,7 +36,8 @@ const routes = [
   { url: '/', label: 'Home' },
   { url: '/post/project-management-guida', label: 'INIZIA DA QUI' },
   { url: '/conference/pyconit', label: 'Pycon IT 2022' },
-  { url: '/post/introduzione-a-scrum', label: 'Scrum' }
+  { url: '/post/introduzione-a-scrum', label: 'Introduzione a Scrum' },
+  { url: '/post/team-di-sviluppo-software-come-costruirlo', label: 'Costruisci un team' }
 ]
 
 export function Header() {

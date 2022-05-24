@@ -13,7 +13,8 @@ export function Headline() {
       </TitleHorizontalLine>
       <ClaimContainer>
         <Claim>
-          Tutto quello che devi sapere del mondo dell'Information Technology e che nessuno ha mai voluto raccontarti.
+          Tutto quello che devi sapere del mondo dell&apos;Information Technology e che nessuno ha mai voluto
+          raccontarti.
           {/* Condividerò con te tutti i miei <b>20 anni di esperienza</b> nel mondo dell'<b>information technology </b>
           come <b>nessuno</b> ha mai fatto prima.
           <br />

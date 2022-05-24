@@ -3,8 +3,10 @@ import Head from 'next/head'
 import styled, { css, CSSProp, DefaultTheme } from 'styled-components'
 import Layout from '../../components/Layout'
 import { Header, postList, readPostFromSlug } from '../../services/postsService'
-import { Comments } from '../../components'
+import { AllJsonLd, Comments } from '../../components'
 import { device } from '../../device'
+import { NextSeo } from 'next-seo'
+import SEO from '../../next-seo.config'
 
 type PostProps = { slug: string; header: Header; content: string }
 
@@ -16,10 +18,9 @@ export default function PostPage({ slug, header, content }: PostProps) {
   return (
     <>
       <Head>
-        <title>Gianluca Carucci - Software Engineer</title>
-        <meta name="description" content="Gianluca Carucci - Software Engineer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <PostSEO slug={slug} header={header} />
       <Layout mainCss={mainCss}>
         <PostContainer>
           <PostHeader>
@@ -44,6 +45,101 @@ export default function PostPage({ slug, header, content }: PostProps) {
       </Layout>
     </>
   )
+}
+
+const PostSEO = ({ slug, header }: Omit<PostProps, 'content'>) => {
+  const url = `${SEO.openGraph?.url}post/${slug}`
+  const title = header.metaTitle ?? ''
+  const description = header.metaDesc ?? ''
+
+  const imageUrl = `${SEO.openGraph?.url}${header.socialImage}`
+  const datePublished = extractDatePublished(header)
+  const dateModified = header.modifiedDate
+  return (
+    <>
+      <NextSeo
+        title={header.metaTitle}
+        description={header.metaDesc}
+        openGraph={{
+          url,
+          images: [
+            {
+              url: imageUrl,
+              alt: header.metaTitle,
+              type: 'image/jpg',
+              width: 1110,
+              height: 720
+            }
+          ]
+        }}
+        additionalMetaTags={[
+          {
+            property: 'twitter:title',
+            content: header.metaTitle ?? ''
+          },
+          {
+            property: 'twitter:description',
+            content: header.metaDesc ?? ''
+          },
+          {
+            property: 'twitter:image',
+            content: imageUrl
+          },
+          {
+            property: 'article:publisher',
+            content: 'https://www.facebook.com/caruccigianluca'
+          },
+          {
+            property: 'article:published_time',
+            content: datePublished
+          },
+          {
+            property: 'article:modified_time',
+            content: dateModified
+          }
+        ]}
+      />
+      <AllJsonLd
+        webpage={{
+          url,
+          title,
+          description,
+          datePublished,
+          dateModified
+        }}
+        additionalType={{
+          '@type': 'BlogPosting',
+          headline: title,
+          keywords: header.tags?.join(' ') ?? '',
+          datePublished,
+          dateModified,
+          author: { '@id': `${SEO.openGraph?.url}#author` },
+          publisher: { '@id': `${SEO.openGraph?.url}#person` },
+          description,
+          name: title,
+          '@id': `${url}/#richSnippet`,
+          isPartOf: {
+            '@id': `${url}/#webpage`
+          },
+          image: {
+            '@id': imageUrl
+          },
+          inLanguage: 'it-IT',
+          mainEntityOfPage: {
+            '@id': `${url}/#webpage`
+          }
+        }}
+      />
+    </>
+  )
+}
+
+const extractDatePublished = (header: Header) => {
+  const date = header.date ?? '20220601'
+  const year = date.slice(0, 4)
+  const month = date.slice(4, 6)
+  const day = date.slice(6, 8)
+  return `${year}-${month}-${day}T18:05:05+02:00`
 }
 
 export async function getStaticPaths() {
