@@ -60,7 +60,7 @@ const JsonLd = () => {
         dateModified,
         author: { '@type': 'Person', name: fullname },
         name: SEO.title ?? '',
-        '@id': 'http://gianluca.carucci.org/#schema-1679352',
+        '@id': 'https://gianluca.carucci.org/#schema-1679352',
         isPartOf: { '@id': `${SEO.openGraph?.url}#webpage` },
         publisher: { '@id': `${SEO.openGraph?.url}#person` },
         inLanguage: 'it-IT',

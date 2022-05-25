@@ -2,7 +2,7 @@ import { DefaultSeoProps } from 'next-seo'
 
 const config: DefaultSeoProps = {
   title: 'Gianluca Carucci | Software Engineer',
-  canonical: 'http://gianluca.carucci.org/',
+  canonical: 'https://gianluca.carucci.org/',
   description:
     'tutto ciò che uno sviluppatore deve sapere per diventare un leader e asset strategico per la propria azienda',
   robotsProps: {
@@ -13,7 +13,7 @@ const config: DefaultSeoProps = {
   openGraph: {
     type: 'website',
     locale: 'it_IT',
-    url: 'http://gianluca.carucci.org/',
+    url: 'https://gianluca.carucci.org/',
     site_name: 'Gianluca Carucci',
     images: [
       {

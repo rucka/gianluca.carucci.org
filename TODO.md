@@ -21,8 +21,8 @@
 - ~~evento tempo trascorso GA+fbk~~
 - ~~evento click GA+fbk~~
 - ~~metadata sharing linkedin / facebook per post e pagina + application/ld+json + robots + article publish info~~
-- publish to gianluca.carucci.org
-- check https and change links from http to https
+- ~~publish to gianluca.carucci.org~~
+- ~~check https and change links from http to https~~
 - pagina contatti con form mailchip + lead tracking
 - verifica indicizzazione
 - check lighthouse e sitescore di google

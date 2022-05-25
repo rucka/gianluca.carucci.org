@@ -1,5 +1,5 @@
 ---
-title: '5 semplici azioni da compiere subito per dire addio ai ritardi nello sviluppo software.'
+title: '5 semplici azioni da compiere subito per dire addio ai ritardi nello sviluppo software'
 metaTitle: 'Sviluppo Software: 5 semplici azioni per prevenire i ritardi'
 metaDesc: 'Guida pratica alla sopravvivenza di un progetto in ritardo. Come cambiare la percezione del cliente verso i tuoi rilasci'
 socialImage: /posts/il-ritardo-nello-sviluppo-software/ritardo.jpg

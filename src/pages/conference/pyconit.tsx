@@ -148,7 +148,7 @@ const ConferenceSEO = () => {
           dateModified,
           author: { '@type': 'Person', name: fullname },
           name: title,
-          '@id': 'http://gianluca.carucci.org/#schema-1679352',
+          '@id': 'https://gianluca.carucci.org/#schema-1679352',
           isPartOf: { '@id': `${SEO.openGraph?.url}#webpage` },
           publisher: { '@id': `${SEO.openGraph?.url}#person` },
           inLanguage: 'it-IT',
