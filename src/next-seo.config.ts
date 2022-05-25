@@ -17,7 +17,7 @@ const config: DefaultSeoProps = {
     site_name: 'Gianluca Carucci',
     images: [
       {
-        url: 'http:/gianluca.carucci.org/opengraph.png',
+        url: 'https:/gianluca.carucci.org/opengraph.png',
         alt: 'Gianluca Carucci | Software Engineer',
         type: 'image/png',
         width: 500,
