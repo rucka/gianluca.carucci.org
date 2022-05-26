@@ -26,6 +26,7 @@
 - pagina contatti con form mailchip + lead tracking
 - verifica indicizzazione
 - check lighthouse e sitescore di google
+- check click analytics conference slide
 
 # v1.2
 

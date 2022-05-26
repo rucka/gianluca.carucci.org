@@ -31,7 +31,8 @@ const nextConfig = {
         source: '/conference/2022/pyconit',
         destination: '/conference/pyconit'
       },
-      { source: '/l/:path*', destination: '/l?:path*' }
+      { source: '/l/:path*', destination: '/l?:path*' },
+      { source: '/q/:path*', destination: '/q?:path*' }
     ]
   },
   async redirects() {
@@ -41,6 +42,11 @@ const nextConfig = {
         {
           source: '/l/pycon22/gh',
           destination: '/l/ccpycon22',
+          permanent: true
+        },
+        {
+          source: '/q/pycon22/gh',
+          destination: '/q/ccpycon22',
           permanent: true
         }
       ]
