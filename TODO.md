@@ -23,8 +23,12 @@
 - ~~metadata sharing linkedin / facebook per post e pagina + application/ld+json + robots + article publish info~~
 - ~~publish to gianluca.carucci.org~~
 - ~~check https and change links from http to https~~
-- pagina contatti con form mailchip + lead tracking
+- ~~pagina contatti con form mailchip~~
+- pagina contatti style bottone + validazione field obbligatori
+- pagina contatti lead tracking
+- link pagina conference a form contatti domanda
 - verifica indicizzazione
+- fix link home footer e header
 - check lighthouse e sitescore di google
 - check click analytics conference slide
 
@@ -43,7 +47,7 @@
 - pagina chi sono
 - refactoring stili globali e font size
 - reorganizzazione componenti
-- aggiunta eventi GA
+- aggiunta eventi e obbiettivi GA
 - sezione testimonianze su home
 - sezione metodo su home (business/tecnologia/strategia o metodologia)
 - sezione chi sono su home
@@ -51,6 +55,7 @@
 - post suggeriti in pagina post
 - post: tempo di lettura
 - post: categorie (business, metodologia, strategia, tecnologia)
+- refactoring short link da json
 
 # v3 corso javascript
 
