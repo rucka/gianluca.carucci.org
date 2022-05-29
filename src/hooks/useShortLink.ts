@@ -5,8 +5,15 @@ export const useShortLink = (prefix: string, medium: string) => {
   const router = useRouter()
 
   useEffect(() => {
-    const path = normalizePath(prefix)(window.location.pathname.toLowerCase())
-    const d = redirectTo(medium)(path)
+    const pathname = window.location.pathname.toLowerCase()
+    let d: string | undefined
+    if (pathname.includes('/q/ggj') || pathname.includes('/l/ggj')) {
+      d =
+        'https://www.kering.com/en/talent/job-offers?search_career%5Bbrand%5D%5B%5D=Gucci&search_career%5BjobCountry%5D%5B%5D=Italy&search_career%5BjobFamily%5D%5B%5D=Information%20Technology&'
+    } else {
+      const path = normalizePath(prefix)(pathname)
+      d = redirectTo(medium)(path)
+    }
     if (d) {
       router.goto(d)
       return
