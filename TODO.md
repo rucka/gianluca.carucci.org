@@ -26,7 +26,7 @@
 - ~~pagina contatti con form mailchip~~
 - pagina contatti style bottone + validazione field obbligatori
 - pagina contatti lead tracking
-- link pagina conference a form contatti domanda
+- ~~link pagina conference a form contatti domanda~~
 - verifica indicizzazione
 - fix link home footer e header
 - check lighthouse e sitescore di google

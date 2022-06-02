@@ -8,10 +8,12 @@ import { fullname } from '../../components/AllJsonLd'
 import Layout from '../../components/Layout'
 import { Section } from '../../components/Section'
 import { device } from '../../device'
+import { useRouter } from '../../hooks/useRouter'
 import SEO from '../../next-seo.config'
 
 export default function ConferencePage() {
   const [showSlide, setShowSlide] = useState(false)
+  const { goto } = useRouter()
 
   const SlideButton = () => {
     if (showSlide) {
@@ -79,6 +81,15 @@ export default function ConferencePage() {
               </Resource>
               <Resource>
                 <SlideButton />
+              </Resource>
+              <br />
+              <Resource>
+                <ResourceButton
+                  onClick={() => {
+                    goto(`/contattami?message=${talk.conference}&type=Domanda generale`)
+                  }}>
+                  fai una domanda
+                </ResourceButton>
               </Resource>
             </ResourceBox>
           </Sidebar>

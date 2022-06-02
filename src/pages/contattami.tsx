@@ -1,9 +1,21 @@
+import { ParsedUrlQuery } from 'querystring'
 import styled, { css } from 'styled-components'
 import Layout from '../components/Layout'
 import { Section } from '../components/Section'
 import { device } from '../device'
+import { useRouter } from '../hooks/useRouter'
+
+const MAILCHIMP_LIST_URL = 'https://carucci.us19.list-manage.com/subscribe/post'
+const MAILCHIMP_U = '15f4540d5a1f1b4542ea82de5'
+const MAILCHIMP_ID = '9362c991f2'
 
 export const Contattami = () => {
+  const { query } = useRouter()
+  const message = typeof window !== 'undefined' && query && query['message'] ? query['message'] + '\n' : ''
+  const type = extractType(query)
+
+  const options = type !== undefined ? [type] : Object.keys(OPTIONS)
+  console.log('type', '-' + type + '-', options)
   return (
     <>
       <Layout>
@@ -26,22 +38,27 @@ export const Contattami = () => {
                 Compila il form qua sotto e ti risponderò il prima possibile.
               </Description>
             </Header>
-            <Form action="https://carucci.us19.list-manage.com/subscribe/post" method="POST">
-              <input type="hidden" name="u" value="15f4540d5a1f1b4542ea82de5" />{' '}
-              <input type="hidden" name="id" value="9362c991f2" />
-              <Dropdown name="MERGE2">
-                <DropdownItem selected disabled>
-                  voglio parlarti di...
-                </DropdownItem>
-                <DropdownItem>Domanda generale</DropdownItem>
-                <DropdownItem>Un consiglio</DropdownItem>
-                <DropdownItem>Proposta e consulenza</DropdownItem>
-                <DropdownItem>Intervista, evento, speech</DropdownItem>
-                <DropdownItem>Altro</DropdownItem>
+            <Form action={MAILCHIMP_LIST_URL} method="POST">
+              <input type="hidden" name="u" value={MAILCHIMP_U} />
+              <input type="hidden" name="id" value={MAILCHIMP_ID} />
+              <Dropdown name="MERGE2" defaultValue={type ?? 'DEFAULT'}>
+                {options.map((o, i) => {
+                  console.log(`IT: ${o}-${i}-${OPTIONS[o]}`)
+                  return (
+                    <DropdownItem key={i} value={o} disabled={o === 'DEFAULT'}>
+                      {OPTIONS[o]}
+                    </DropdownItem>
+                  )
+                })}
               </Dropdown>
               <Input name="MERGE1" placeholder="Inserisci il tuo nome" />
               <Input name="MERGE0" placeholder="Inserisci la tua email" />
-              <TextArea name="MERGE3" rows={5} placeholder="Scrivi il tuo messaggio (massimo 5 righe)" />
+              <TextArea
+                name="MERGE3"
+                rows={5}
+                placeholder="Scrivi il tuo messaggio (massimo 5 righe)"
+                defaultValue={message}
+              />
               <button type="submit" value="submit">
                 invia
               </button>
@@ -51,6 +68,31 @@ export const Contattami = () => {
       </Layout>
     </>
   )
+}
+
+const extractType = (query: ParsedUrlQuery) => {
+  if (!query || typeof window === 'undefined' || !query['type']) {
+    return
+  }
+  const type = query['type']
+  if (typeof type !== 'string') {
+    return
+  }
+  console.log('extractType', type, OPTIONS[type])
+  if (OPTIONS[type] === undefined || OPTIONS[type] === '') {
+    console.log('extractType miss')
+    return
+  }
+  return type
+}
+
+const OPTIONS = {
+  DEFAULT: 'voglio parlarti di...',
+  'Domanda generale': 'Domanda generale',
+  'Un consiglio': 'Un consiglio',
+  'Proposta e consulenza': 'Proposta e consulenza',
+  'Intervista, evento, speech': 'Intervista, evento, speech',
+  Altro: 'Altro'
 }
 
 export default Contattami
