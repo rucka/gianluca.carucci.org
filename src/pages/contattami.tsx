@@ -15,7 +15,6 @@ export const Contattami = () => {
   const type = extractType(query)
 
   const options = type !== undefined ? [type] : Object.keys(OPTIONS)
-  console.log('type', '-' + type + '-', options)
   return (
     <>
       <Layout>
@@ -42,14 +41,11 @@ export const Contattami = () => {
               <input type="hidden" name="u" value={MAILCHIMP_U} />
               <input type="hidden" name="id" value={MAILCHIMP_ID} />
               <Dropdown name="MERGE2" defaultValue={type ?? 'DEFAULT'}>
-                {options.map((o, i) => {
-                  console.log(`IT: ${o}-${i}-${OPTIONS[o]}`)
-                  return (
-                    <DropdownItem key={i} value={o} disabled={o === 'DEFAULT'}>
-                      {OPTIONS[o]}
-                    </DropdownItem>
-                  )
-                })}
+                {options.map((o, i) => (
+                  <DropdownItem key={i} value={o} disabled={o === 'DEFAULT'}>
+                    {OPTIONS[o]}
+                  </DropdownItem>
+                ))}
               </Dropdown>
               <Input name="MERGE1" placeholder="Inserisci il tuo nome" />
               <Input name="MERGE0" placeholder="Inserisci la tua email" />
@@ -78,9 +74,7 @@ const extractType = (query: ParsedUrlQuery) => {
   if (typeof type !== 'string') {
     return
   }
-  console.log('extractType', type, OPTIONS[type])
   if (OPTIONS[type] === undefined || OPTIONS[type] === '') {
-    console.log('extractType miss')
     return
   }
   return type
