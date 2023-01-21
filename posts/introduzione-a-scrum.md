@@ -1,5 +1,5 @@
 ---
-title: 'Scopri cos’è SCRUM e come può esserti utile'
+title: 'Diventa un leader persuasivo: scopri il potere del principio del first follower'
 metaTitle: "Cos'è SCRUM e come può esserti utile"
 metaDesc: 'SCRUM spiegato semplice con esempi presi dalla vita reale. Non è la soluzione a tutti i mali: prima di adottarlo, devi comprenderlo fino in fondo.'
 socialImage: /posts/introduzione-a-scrum/feature-image.jpg
@@ -199,6 +199,8 @@ Se sei interessato a questo tema ti consiglio di leggerla.
 _Mamma, tutto chiaro?_
 
 PS: se questo articolo ti è piaciuto e pensi che possa essere utile a qualche tua amico, condividilo. A te non costa niente, per me è un feedback molto importante! Grazie di cuore.
+
+Se vuoi contattarmi, [scrivimi](/contattami)
 
 Tieni botta,  
 Gianluca

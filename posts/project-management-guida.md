@@ -1649,6 +1649,7 @@ Sarei contento se lasciassi un commento per raccontare le tue strategie, i tuoi 
 _Parliamone ed arricchiamoci insieme._
 
 E se vuoi, condividi questa guida con chi pensi possa essergli utile.
+Se invece vuoi contattarmi, [scrivimi](/contattami)
 
 Tieni botta,  
 Gianluca
