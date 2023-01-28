@@ -1,4 +1,7 @@
 import md from 'markdown-it'
+import hljs from 'highlight.js'
+import 'highlight.js/styles/github.css'
+
 import Head from 'next/head'
 import styled, { css, CSSProp, DefaultTheme } from 'styled-components'
 import Layout from '../../components/Layout'
@@ -13,7 +16,9 @@ type PostProps = { slug: string; header: Header; content: string }
 const DESKTOP_COLUMN_SIZE = '650px'
 
 export default function PostPage({ slug, header, content }: PostProps) {
-  const mdRender = md()
+  const mdRender = md({
+    highlight: (str, lang) => hljs.highlight(str, { language: lang }).value
+  })
   const __html = mdRender.render(content)
   return (
     <>
@@ -265,12 +270,13 @@ const PostContent = styled.div`
     margin-bottom: 3.4rem;
   }
   h2 {
-    /* font-size: 3.1428rem; */
-    font-size: 2rem;
+    font-size: 3.1428rem;
+    /* font-size: 2rem; */
     margin-bottom: 3.4rem;
   }
   h3 {
-    font-size: 2.4285rem;
+    /* font-size: 2.4285rem; */
+    font-size: 2.2rem;
     margin-bottom: 1.71rem;
   }
   h4 {
