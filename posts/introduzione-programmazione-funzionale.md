@@ -199,6 +199,40 @@ In questo esempio abbiamo visto come è possibile implementare le **Monad** in T
 >
 > Bartosz Milewski
 
+### La proprietà associativa, i monoidi e la programmazione concorrente
+
+**La proprietà associativa è fondamentale nella programmazione concorrente** in quanto influisce sul modo in cui i risultati vengono combinati e ordinati.
+
+Ad esempio, quando si mescolano colori, se la proprietà associativa non fosse rispettata, i risultati potrebbero non essere come previsto.
+
+Immaginiamo di avere tre secchi di vernice rossa, gialla e blu e che vogliamo mescolare questi colori per ottenere il verde. Se la proprietà associativa non fosse rispettata, potremmo finire per ottenere un colore diverso da quello previsto, come ad esempio un marrone.
+
+Questo è perché l'ordine in cui si mescolano i colori ha un impatto sulla tonalità finale del colore.
+
+In altre parole, la proprietà associativa dice che l'operazione di combinazione deve essere associativa, ovvero che:
+
+`(a * b) * c`
+
+(dove `*` è una generica operazione) _deve essere equivalente a_:
+
+`a * (b * c)`
+
+**Se questa proprietà non viene rispettata, i risultati possono essere imprevedibili e le operazioni non parallelizzabili**.
+
+Questo è anche vero per le operazioni concorrenti, dove **l'ordine di esecuzione delle operazioni ha un impatto sul risultato finale**.
+
+E' importante rispettare la proprietà associativa per garantire che i risultati siano precisi e affidabili.
+
+_Come avere la garanzia che una operazione sia parallelizzabile?_
+
+Ti presento **il monoide**.
+
+Un monoide è un insieme matematico con una operazione binaria che soddisfa alcune proprietà come l'associatività e l'esistenza di un elemento neutro.
+
+Queste proprietà **rendono i monoidi adatti per l'utilizzo in contesti di programmazione concorrente**, poiché garantiscono che gli operazioni eseguite sulla stessa istanza in parallelo possono essere combinate in un ordine qualsiasi senza influire sul risultato finale.
+
+Ciò significa che **i monoidi possono essere utilizzati per modellare e risolvere problemi di concorrenza in modo efficiente e affidabile, fornendo una base solida per lo sviluppo di algoritmi e sistemi distribuiti concorrenti**.
+
 ### Map Reduce e le analogie con i Monad
 
 **Il paradigma Map Reduce è un modello di programmazione distribuita utilizzato per elaborare grandi volumi di dati in modo parallelo**.
@@ -257,7 +291,7 @@ E' lo strumento che risolverà tutti i nostri problemi?
 
 _Come ogni strumento, anche la programmazione funzionale è un asset_: dobbiamo padroneggiarlo ed utilizzarlo nel contesto giusto senza abusarne.
 
-Ma il tempo per questa discusisone non è ancora arrivato.
+Ma il tempo per questa discussione non è ancora arrivato.
 
 Prima di concludere ti lascio alcuni link per approfondire l'argomento di questo articolo:
 
