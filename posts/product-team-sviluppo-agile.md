@@ -1,7 +1,7 @@
 ---
 title: 'Product team e organizzazione flat: come sviluppare un prodotto di successo'
 metaTitle: 'Product team e organizzazione flat: come sviluppare un prodotto di successo'
-metaDesc: 'Esplora il mondo dei product team, approfondendo i concetti di organizzazione flat, leadership condivisa, way of working solida e agile development. Conosci i vantaggi di questi approcci e come possono migliorare la vita lavorativa e la qualità del prodotto finale.'
+metaDesc: 'Esplora il mondo dei product team, approfondisci i vantaggi e come migliorare la vita lavorativa e la qualità del prodotto finale.'
 socialImage: /posts/product-team-sviluppo-agile/feature-image.jpg
 date: '20230204'
 tags:
