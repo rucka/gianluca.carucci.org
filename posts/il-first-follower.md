@@ -4,6 +4,7 @@ metaTitle: 'Diventa un leader persuasivo: scopri il potere del principio del fir
 metaDesc: "Scopri come diventare un leader persuasivo utilizzando il principio del first follower. Impara a motivare il tuo team e a trasformare un'idea in un movimento di successo."
 socialImage: /posts/il-first-follower/feature-image.jpg
 date: '20230121'
+category: 'Digital Transformation'
 tags:
   - leadership
   - team

@@ -4,6 +4,7 @@ metaTitle: 'Come costruire il miglior team di sviluppo software'
 metaDesc: 'Analizziamo quali sono le caratteristiche più importanti con cui valutare un nuovo candidato per il tuo team di sviluppo software e quali errori non devi commettere per costruire il tuo team.'
 socialImage: /posts/team-di-sviluppo-software-come-costruirlo/team.jpg
 date: '20200524'
+category: 'Digital Transformation'
 tags:
   - team
   - softskill

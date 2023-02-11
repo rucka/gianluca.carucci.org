@@ -4,6 +4,7 @@ metaTitle: 'Scrum Burndown Chart il miglior strumento di project management'
 metaDesc: 'Lo Scrum Burndown Chart è uno strumento fondamentale nel project management ma può essere altrettanto efficace per monitorare i tuoi obbiettivi personali.'
 socialImage: /posts/scrum-burndown-chart/burndown-chart.png
 date: '20200628'
+category: 'Digital Transformation'
 tags:
   - scrum
   - agile

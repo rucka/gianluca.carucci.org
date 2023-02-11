@@ -4,6 +4,7 @@ metaTitle: 'Product team e organizzazione flat: come sviluppare un prodotto di s
 metaDesc: 'Esplora il mondo dei product team, approfondisci i vantaggi e come migliorare la vita lavorativa e la qualità del prodotto finale.'
 socialImage: /posts/product-team-sviluppo-agile/feature-image.jpg
 date: '20230204'
+category: 'Digital Transformation'
 tags:
   - agile
   - product-team

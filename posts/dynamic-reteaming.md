@@ -4,6 +4,7 @@ metaTitle: 'Dynamic Reteaming: come implementare il cambiamento nei team'
 metaDesc: "Impara come migliorare l'efficienza e la produttività del team, sviluppare una cultura aziendale dinamica e aumentare la soddisfazione dei membri del team."
 socialImage: /posts/dynamic-reteaming/feature-image.jpg
 date: '20230211'
+category: 'Digital Transformation'
 tags:
   - leadership
   - team-building

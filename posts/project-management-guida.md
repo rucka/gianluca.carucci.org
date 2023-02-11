@@ -5,6 +5,7 @@ metaDesc: 'La guida definitiva per gestire progetti software rispettando tempi e
 socialImage: /posts/project-management-guida/cover.jpg
 date: '20200524'
 featured: true
+category: 'Digital Transformation'
 tags:
   - projectmanagement
   - agile

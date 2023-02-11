@@ -4,6 +4,7 @@ metaTitle: 'Erik Meijer: il pioniere della programmazione funzionale spiega come
 metaDesc: 'Scopri come la programmazione funzionale di Erik Meijer può migliorare la tua efficienza di sviluppo e creare codice pulito, robusto e scalabile'
 socialImage: /posts/introduzione-programmazione-funzionale/feature-image.jpg
 date: '20230128'
+category: 'Software Engineering'
 tags:
   - programmazione
   - funzionale

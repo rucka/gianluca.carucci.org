@@ -47,7 +47,7 @@ export default function BlogPosts({ posts }: BlogPostsProps) {
         }
       `}>
       <FeaturePost post={featured} />
-      <ListPosts posts={rest} />
+      <ListPosts posts={rest} count={3} />
     </Section>
   )
 }

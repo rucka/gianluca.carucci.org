@@ -1,15 +1,73 @@
-import styled from 'styled-components'
+import { useState } from 'react'
+import styled, { css } from 'styled-components'
 import { device } from '../../../device'
 import { PostInfo } from '../../../services/postsService'
 import { ALink } from '../../ALink'
+import { Empty } from '../../Empty'
 
-export const ListPosts = ({ posts }: { posts: PostInfo[] }) => {
+export const ListPosts = ({ posts, count }: { posts: PostInfo[]; count?: number }) => {
+  const [pageNumber, setPageNumber] = useState<number>(0)
+
+  const startIndex = count ? pageNumber * count : 0
+  const endIndex = count ? startIndex + count : undefined
+
+  const getPosts = () => {
+    if (!count) {
+      return posts
+    }
+    return posts.slice(startIndex, endIndex)
+  }
+  const hasPrevious = () => {
+    return pageNumber > 0
+  }
+  const hasNext = () => {
+    return endIndex && endIndex < posts.length
+  }
+
+  console.log('count', count)
+  console.log('post.length', posts.length)
+  console.log('startIndex', startIndex)
+  console.log('endIndex', endIndex)
+  console.log('hasPrevious', hasPrevious())
+  console.log('hasNext', hasNext())
+  console.log('######')
+
+  const goToPrevious = () => {
+    if (!hasPrevious()) {
+      return
+    }
+    setPageNumber(pageNumber - 1)
+  }
+  const goToNext = () => {
+    if (!hasNext()) {
+      return
+    }
+    setPageNumber(pageNumber + 1)
+  }
+
+  const Pagination = () => {
+    if (!count) {
+      return <Empty />
+    }
+    return (
+      <PaginationButtons>
+        <PaginationButton disabled={!hasPrevious()} onClick={goToPrevious}>
+          precedente
+        </PaginationButton>
+        <PaginationButton disabled={!hasNext()} onClick={goToNext}>
+          prossima
+        </PaginationButton>
+      </PaginationButtons>
+    )
+  }
+
   return (
     <BlogPostsCardContainer>
       <Header>
         <span>Leggi anche</span>
       </Header>
-      {posts.map((p) => (
+      <Pagination />
+      {getPosts().map((p) => (
         <PostItem post={p} key={p.slug} />
       ))}
     </BlogPostsCardContainer>
@@ -35,6 +93,28 @@ const Header = styled.div`
     padding-right: 1rem;
     border-bottom: 5px solid ${(p) => p.theme.secondaryColor};
   }
+`
+
+const PaginationButtons = styled.div`
+  display: flex;
+  justify-content: end;
+  margin: 5px;
+`
+const PaginationButton = styled.a<{ disabled: boolean }>`
+  margin: 5px;
+  cursor: pointer;
+  font-style: italic;
+
+  border-bottom: black 2px solid;
+
+  ${(props) =>
+    props.disabled &&
+    css`
+      cursor: default;
+      opacity: 0.5;
+      text-decoration: none;
+      border-bottom: none;
+    `}
 `
 
 const PostItem = ({ post }: { post: PostInfo }) => {

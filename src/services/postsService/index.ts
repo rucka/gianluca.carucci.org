@@ -9,6 +9,7 @@ export type Header = {
   date?: string
   modifiedDate: string
   featured?: boolean
+  category?: string
   tags?: string[]
 }
 export type PostInfo = { slug: string; header: Header }
