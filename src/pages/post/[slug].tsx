@@ -60,6 +60,7 @@ const PostSEO = ({ slug, header }: Omit<PostProps, 'content'>) => {
   const imageUrl = `${SEO.openGraph?.url}${header.socialImage}`
   const datePublished = extractDatePublished(header)
   const dateModified = header.modifiedDate
+  const tags = header.tags ? header.tags.join(',') : ''
   return (
     <>
       <NextSeo
@@ -101,6 +102,10 @@ const PostSEO = ({ slug, header }: Omit<PostProps, 'content'>) => {
           {
             property: 'article:modified_time',
             content: dateModified
+          },
+          {
+            property: 'article:tag',
+            content: tags
           }
         ]}
       />
@@ -115,7 +120,7 @@ const PostSEO = ({ slug, header }: Omit<PostProps, 'content'>) => {
         additionalType={{
           '@type': 'BlogPosting',
           headline: title,
-          keywords: header.tags?.join(' ') ?? '',
+          keywords: tags,
           datePublished,
           dateModified,
           author: { '@id': `${SEO.openGraph?.url}#author` },

@@ -24,14 +24,6 @@ export const ListPosts = ({ posts, count }: { posts: PostInfo[]; count?: number 
     return endIndex && endIndex < posts.length
   }
 
-  console.log('count', count)
-  console.log('post.length', posts.length)
-  console.log('startIndex', startIndex)
-  console.log('endIndex', endIndex)
-  console.log('hasPrevious', hasPrevious())
-  console.log('hasNext', hasNext())
-  console.log('######')
-
   const goToPrevious = () => {
     if (!hasPrevious()) {
       return
