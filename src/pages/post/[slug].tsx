@@ -285,13 +285,15 @@ const PostContent = styled.div`
     margin-bottom: 1.71rem;
   }
   h4 {
-    font-size: 2rem;
-    margin-bottom: 2.28rem;
+    font-size: 1.8rem; /* font-size: 2rem; */
+    /* margin-bottom: 2.28rem; */
+    margin-bottom: 1.71rem;
   }
   h5 {
     font-size: 1.715rem;
     line-height: 1.4;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
+    margin-bottom: 1.71rem;
   }
   h6 {
     font-size: 1.286rem;

@@ -133,7 +133,7 @@ MA PERCHE’?!?!?
 
 Per non intaccare il nostro orgoglio.
 
-Mettere il nostro orgoglio davanti al bene dell’obbiettivo comune è, questo si, un errore imperdonabile.
+Mettere il nostro orgoglio davanti al bene dell’obiettivo comune è, questo si, un errore imperdonabile.
 
 Diversamente, **una comunicazione tempestiva diminuisce drasticamente l’impatto di un errore**.
 

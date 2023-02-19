@@ -71,7 +71,7 @@ _"done is better than perfect"_ insegna Benjamin Franklin.
 
 Ma la lezione più importante che ho imparato non è stata questa.
 
-**Per raggiungere un obbiettivo devi analizzare il contesto e adattarti**.  
+**Per raggiungere un obiettivo devi analizzare il contesto e adattarti**.  
 Questo è stato il metodo vincente nel mio percorso di studi.
 
 Sai qual è la cosa strana? Nello sviluppo software invece facciamo l’esatto contrario.
@@ -186,7 +186,7 @@ Tutti parlano di project management, ma cosa è realmente? N*on preoccuparti, tr
 
 Ripetiamolo!
 
-_Per raggiungere un obbiettivo devi analizzare la situazione e adattarti._
+_Per raggiungere un obiettivo devi analizzare la situazione e adattarti._
 
 Riuscii a convincerli e mi ascoltarono.  
 Almeno in parte.
@@ -367,7 +367,7 @@ Ci serviva mettere in campo un processo di Project Management efficace _nel mino
 
 ## Ma che diavolo è il Project Management?
 
-**E’ l’organizzazione delle risorse, delle metodologie e delle tecniche atte a pianificare e monitorare le azioni necessarie a raggiungere un obbiettivo strategico nei vincoli di tempo e costi definiti.**
+**E’ l’organizzazione delle risorse, delle metodologie e delle tecniche atte a pianificare e monitorare le azioni necessarie a raggiungere un obiettivo strategico nei vincoli di tempo e costi definiti.**
 
 _“Gianluca, non si capisce un cazzo”_
 
@@ -376,13 +376,13 @@ _“Gianluca, non si capisce un cazzo”_
 Settimana scorsa ero in riunione con un cliente. Dovevano concludere gli sviluppi della prima release di un prodotto entro un mese e mezzo.  
 _Speriamo di farcela_, fu la frase conclusiva dell’incontro.
 
-**Non ho mai visto nessun obbiettivo raggiunto affidandosi alla _speranza_.** Non basta nello sviluppo software, nella scienza e neanche nello sport. La speranza non serve neppure quando giochi a carte con gli amici.
+**Non ho mai visto nessun obiettivo raggiunto affidandosi alla _speranza_.** Non basta nello sviluppo software, nella scienza e neanche nello sport. La speranza non serve neppure quando giochi a carte con gli amici.
 
 **La speranza non è una strategia.**
 
 _Allora cosa serve?_
 
-Il nostro obbiettivo è portare a termine con successo un progetto software (_dovrà diventare la tua ossessione!_)
+Il nostro obiettivo è portare a termine con successo un progetto software (_dovrà diventare la tua ossessione!_)
 
 Per riuscirci devi essere in grado di rispondere ad alcune domande.
 
@@ -617,7 +617,7 @@ Il nuovo modello organizzativo doveva essere costruito secondo alcuni principi n
 - **pianificazione attendibile.** Dobbiamo mettere in grado l’azienda di organizzare i propri processi tenendo conto del software che sarà prodotto.
 - **anticipare il ROI.** Su cosa dobbiamo concentrarci come team di sviluppo per portare più valore possibile e il prima possibile all’azienda?
 
-Adattamento, obbiettivi chiari, velocità e frequenza di rilasci.
+Adattamento, obiettivi chiari, velocità e frequenza di rilasci.
 
 Sembrano proprio alcuni dei principi del [manifesto Agile](https://agilemanifesto.org/iso/it/principles.html).
 
@@ -629,13 +629,13 @@ ATTENTO PERO’!
 
 Non sto dicendo che i processi Agili sono il miglior modello organizzativo possibile (ti assicuro che nella mia carriera ho coscientemente gestito processi con [modelli Waterfall,](https://it.wikipedia.org/wiki/Modello_a_cascata) e non cambierei quella scelta).
 
-**Devi sempre considerare cosa vuoi ottenere e scegliere la metodologia che più ti avvicina agli obbiettivi che ti sei prefissato.**
+**Devi sempre considerare cosa vuoi ottenere e scegliere la metodologia che più ti avvicina agli obiettivi che ti sei prefissato.**
 
 Non è finita qui.
 
 Una volta **scelta la metodologia non prenderla come dogma ma adattala al tuo team e al tuo contesto**.
 
-- **Obbiettivi**
+- **obiettivi**
 - **Analisi**
 - **Scelta**
 - **Adattamento**
@@ -661,7 +661,7 @@ Fine dello spiegone.
 Concentriamoci su quattro parole chiave:
 
 - **costante**. Scegliere un periodo di tempo fisso permette di costruire metriche confrontabili tra sprint (la più famosa è la **velocity**, indicatore che esprime l’ammontare di lavoro completato).
-- **breve.** Un periodo di tempo breve permette di fissare obbiettivi tangibili che tengono motivato e produttivo il team. (_non preoccuparti, su questo aspetto ci torneremo tra poco_).
+- **breve.** Un periodo di tempo breve permette di fissare obiettivi tangibili che tengono motivato e produttivo il team. (_non preoccuparti, su questo aspetto ci torneremo tra poco_).
 - **priorità**. Quali attività pianificare nello sprint e in che ordine è il passo più critico. La scelta deve avvenire rispondendo ad una sola domanda: quale set di funzionalità, se completate durante lo sprint, offrirebbe il maggior valore possibile al business?
 - **completato.** Se una funzionalità non può essere messa in produzione non è completata: non basta che sia stata sviluppata ma deve superare i test di qualità e conformità. E’ un aspetto tanto semplice quanto potente perché porta il team a pensare in termini di valore e non di quantità.
 
@@ -681,7 +681,7 @@ Il modello di sviluppo è “solo” uno strumento, una serie di regole; è si, 
 
 _E’ come iscriversi alla migliore università al mondo senza frequentarla_.
 
-Se non hai chiaro l’obbiettivo che vuoi raggiungere, trovarti all’interno del miglior contesto possibile non potrà aiutarti.
+Se non hai chiaro l’obiettivo che vuoi raggiungere, trovarti all’interno del miglior contesto possibile non potrà aiutarti.
 
 Nel caso della multinazionale **bisognava cambiare il mindset del team.** (_è un problema che ho dovuto affrontare spesso in molte altre aziende_)
 
@@ -697,7 +697,7 @@ Un Project Manager ti risponderebbe rispettare le scadenze, uno sviluppatore scr
 
 Sono tutte responsabilità corrette ma rimangono confinate all’aspetto tecnico delle varie figure coinvolte nel progetto.
 
-Il problema è che **ogni momento della nostra giornata lavorativa siamo presi dai tecnicismi, li seguiamo a volte impuntandoci su di essi e dimenticandoci qual è il vero obbiettivo che ci siamo fissati con il team.**
+Il problema è che **ogni momento della nostra giornata lavorativa siamo presi dai tecnicismi, li seguiamo a volte impuntandoci su di essi e dimenticandoci qual è il vero obiettivo che ci siamo fissati con il team.**
 
 ![siamo sempre concentrati sul problema tecnico dimenticandoci il motivo di business per cui stiamo sviluppando il software](/posts/project-management-guida/software-enginner-1024x696.png)
 
@@ -707,7 +707,7 @@ Lo ripeto.
 
 _Le skill tecniche devono essere un mezzo, non il fine._
 
-**Ogni persona del team, in ogni momento del proprio lavoro, deve prendere le proprie decisioni (anche le più tecniche) perseguendo l’obbiettivo di business del progetto.**
+**Ogni persona del team, in ogni momento del proprio lavoro, deve prendere le proprie decisioni (anche le più tecniche) perseguendo l’obiettivo di business del progetto.**
 
 In una parola: **responsabilità**.
 
@@ -791,7 +791,7 @@ Lascia che ti spieghi.
 
 I primi sono avvenimenti provenienti da agenti esterni, fuori dal nostro controllo, che impattano in positivo e in negativo i presupposti del progetto. Ne sono un esempio i cambi legislativi o del mercato. **Un aspetto che all’inizio del progetto poteva essere di fondamentale importanza, dopo qualche mese potrebbe non esserlo più.**
 
-**I cambiamenti interni sono invece il cuore di un processo iterativo**: man mano che il progetto avanza e si raggiungono degli obbiettivi, _si acquisiscono informazioni strategiche_.
+**I cambiamenti interni sono invece il cuore di un processo iterativo**: man mano che il progetto avanza e si raggiungono degli obiettivi, _si acquisiscono informazioni strategiche_.
 
 Pensa soltanto a quanti feedback puoi ricevere dagli utenti a cui metti a disposizione una nuova release ogni due settimane.
 
@@ -940,7 +940,7 @@ Finalmente eravamo in grado di dare al team lavoro sufficiente per partire con g
 
 Lavorare settimana dopo settimana aggiornando il Product Backlog ha un solo fine: preparare lo sprint successivo.
 
-_Marta era molto precisa. Analizzava i risultati dello sprint precedente, sceglieva un obbiettivo per quello successivo e preparava i Product Backlog item che sarebbero serviti per raggiungere quell’obbiettivo_.
+_Marta era molto precisa. Analizzava i risultati dello sprint precedente, sceglieva un obiettivo per quello successivo e preparava i Product Backlog item che sarebbero serviti per raggiungere quell’obiettivo_.
 
 Alla conclusione di questo lavoro, Marta si assicurava che tutti i backlog item su cui si era concentrata per lo sprint successivo, avessero due caratteristiche:
 
@@ -951,25 +951,25 @@ In questo modo sarebbe stato molto semplice preparare lo Sprint Backlog.
 
 FERMATI!
 
-_Ma non hai mai parlato dell’obbiettivo dello sprint?_
+_Ma non hai mai parlato dell’obiettivo dello sprint?_
 
 E’ arrivato il momento.
 
-Definire (e dichiarare) **l’obbiettivo dello sprint è,** forse, **l’attività più importante dello sprint** **stesso**.
+Definire (e dichiarare) **l’obiettivo dello sprint è,** forse, **l’attività più importante dello sprint** **stesso**.
 
-![Definire (e dichiarare) l'obbiettivo dello sprint è, forse, l'attività più importante dello sprint stesso.](/posts/project-management-guida/fissa-obbiettivo.jpg)
+![Definire (e dichiarare) l'obiettivo dello sprint è, forse, l'attività più importante dello sprint stesso.](/posts/project-management-guida/fissa-obiettivo.jpg)
 
 Ahimè nonostante la sua importanza, anche questa, è una attività che molto raramente vedo fare nei progetti. (_e si vedono le conseguenze_)
 
-**Fissare un obbiettivo a breve termine è il modo migliore per responsabilizzare il team.**
+**Fissare un obiettivo a breve termine è il modo migliore per responsabilizzare il team.**
 
-Inoltre, spiegare i vantaggi che porterà il raggiungimento di quell’obbiettivo è il modo migliore per spingere il team a fare l’impossibile per completarlo.
+Inoltre, spiegare i vantaggi che porterà il raggiungimento di quell’obiettivo è il modo migliore per spingere il team a fare l’impossibile per completarlo.
 
 Ne ho già parlato prima ma voglio ripetertelo.
 
 **Responsabilizzare il team deve essere il pensiero principe nella gestione del progetto.**
 
-Fissare un obbiettivo per il progetto è il primo passo per ottenerlo.
+Fissare un obiettivo per il progetto è il primo passo per ottenerlo.
 
 _Ma ci torniamo tra poco._
 
@@ -981,7 +981,7 @@ Il lavoro settimanale di Marta ha portato i suoi frutti: può ordinare il Produc
 
 _Si, ma cosa vuol dire “necessari”?_
 
-Un numero tale da poter raggiungere l’obbiettivo dello sprint in base alla capacità del team.
+Un numero tale da poter raggiungere l’obiettivo dello sprint in base alla capacità del team.
 
 Lascia che mi spieghi meglio.
 
@@ -1029,7 +1029,7 @@ Ti voglio parlare degli accorgimenti di cui tenere conto per **mettere il team n
 
 Vogliamo un team **responsabilizzato e focalizzato**.
 
-Per ottenerlo, **il primo passo dello sprint planning è condividere l’obbiettivo dello sprint.**
+Per ottenerlo, **il primo passo dello sprint planning è condividere l’obiettivo dello sprint.**
 
 Il passo successivo è spiegare al team tutti gli item dello Sprint Backlog. In questa fase aiutati con i wireframe e la UI prodotta dallo UX designer.
 
@@ -1059,7 +1059,7 @@ Alla fine della spiegazione funzionale del backlog si passa alla fase più tecni
 
 In questa fase non serve la presenza del Product Owner.
 
-**L’obbiettivo dello sprint injection è mettere in grado le persone di sviluppare in autonomia ogni attività presente nel backlog.**
+**L’obiettivo dello sprint injection è mettere in grado le persone di sviluppare in autonomia ogni attività presente nel backlog.**
 
 Funzionava pressapoco cosi.
 
@@ -1073,13 +1073,13 @@ Alla fine di questo passaggio, ogni componente del gruppo aveva tutte le informa
 
 _Ho capito bene? Ogni componente del team doveva essere in grado di sviluppare tutto?_
 
-Si, o almeno questo doveva essere l’obbiettivo.
+Si, o almeno questo doveva essere l’obiettivo.
 
 Ritorniamo (come sempre) al tema della responsabilità.
 
-Se tutti gli sviluppatori sono in grado di prendersi in carico qualsiasi attività del backlog, **nessuno può più preoccuparsi solo della propria parte** ma deve costantemente fare tutto il possibile per raggiungere l’obbiettivo dello sprint.
+Se tutti gli sviluppatori sono in grado di prendersi in carico qualsiasi attività del backlog, **nessuno può più preoccuparsi solo della propria parte** ma deve costantemente fare tutto il possibile per raggiungere l’obiettivo dello sprint.
 
-**Raggiungere l'obbiettivo dello sprint deve diventare l'ossessione di ogni singolo componente del team**.
+**Raggiungere l'obiettivo dello sprint deve diventare l'ossessione di ogni singolo componente del team**.
 
 Il focus deve passare da _quello che faccio io_ a _quello che faccio per il progetto_.
 
@@ -1161,20 +1161,20 @@ E’ la più critica: la fase del commitment.
 
 I**l commitment è quella fase in cui Il team deve scegliere un sottoinsieme del backlog che è sicuro di portare a termine entro la fine dello sprint.**
 
-Su questa parte del backlog, **il team dovrà prendere un impegno formale (commitment** appunto**)**. Gli item rimanenti sono opzionali: il mancato completamento non dovrà pregiudicare l’obbiettivo dello sprint.
+Su questa parte del backlog, **il team dovrà prendere un impegno formale (commitment** appunto**)**. Gli item rimanenti sono opzionali: il mancato completamento non dovrà pregiudicare l’obiettivo dello sprint.
 
 _Ma prendere un impegno con chi?_
 
 Con il tuo Product Owner prima di tutto, con stackholder, utenti e/o il team di comunicazione poi.
 
-**Insieme alla formalizzazione dell’obbiettivo il commitment rappresenta lo strumento per responsabilizzare del team**.
+**Insieme alla formalizzazione dell’obiettivo il commitment rappresenta lo strumento per responsabilizzare del team**.
 
 _Ma come scegli gli item committed?_
 
 Costruiamolo un sottoinsieme del backlog con queste caratteristiche:
 
 - **la somma delle stime deve garantirti un margine di sicurezza.** Ricordati, qualsiasi catastrofe succeda durante lo sprint, quegli item vanno completati. (_io generalmente rimango sotto il 60% della capacity_)
-- **deve raggiungere l’obbiettivo dello sprint in modo consistente**. Magari rinuncerai a qualche dettaglio ma lo spirito dell’obbiettivo deve essere mantenuto.
+- **deve raggiungere l’obiettivo dello sprint in modo consistente**. Magari rinuncerai a qualche dettaglio ma lo spirito dell’obiettivo deve essere mantenuto.
 
 E’ probabile che il tool che hai adottato ti metta a disposizione uno stato che identifica gli item committed. In questo caso usalo. (ad esempio Azure DevOps).
 
@@ -1182,16 +1182,16 @@ _Ci siamo. Il team ha uno sprint backlog._
 
 Ti rimane solo una cosa da fare: richiamare il Product Owner e presentargli il piano per la sua approvazione.
 
-_Il Product Owner dovrà verificare che lo sprint backlog sia congruente con l’obbiettivo dello sprint_. Se così non fosse, insieme, farete piccoli aggiustamenti per metterlo in linea.
+_Il Product Owner dovrà verificare che lo sprint backlog sia congruente con l’obiettivo dello sprint_. Se così non fosse, insieme, farete piccoli aggiustamenti per metterlo in linea.
 
 Ti ho sottolineato quanto è strategica la responsabilità. Prima di passare oltre, ricapitoliamo **quali azioni concrete** **devi attuare per responsabilizzare il team?**
 
 Ecco l’elenco:
 
-- definisci un **obbiettivo** di team
+- definisci un **obiettivo** di team
 - ogni componente del team deve apprendere tutte le conoscenze funzionali e tecniche per **sviluppare in** **autonomia** i backlog item dello sprint
 - il team deve fare le **stime** (e verificarle a fine sprint)
-- il team deve avere un **commitment** congruo con l’obbiettivo
+- il team deve avere un **commitment** congruo con l’obiettivo
 
 Siamo pronti per il primo giorno dello sprint.
 
@@ -1201,7 +1201,7 @@ Giorno dopo giorno il team si farà sempre le stesse due domande:
 
 _Quanto lavoro manca a chiudere lo sprint?_
 
-_Riusciremo a raggiungere l’obbiettivo?_
+_Riusciremo a raggiungere l’obiettivo?_
 
 Il tuo processo metodologico dovrà essere in grado di rispondere a queste domande.
 
@@ -1281,7 +1281,7 @@ _io non ti disturbo chiedendoti lo stato di avanzamento, tu mi aggiorni puntualm
 
 Torniamo sempre al solito punto: **la responsabilità**.
 
-**Capisci perché è così strategico coinvolgere lo sviluppatore negli obbiettivi del progetto?**
+**Capisci perché è così strategico coinvolgere lo sviluppatore negli obiettivi del progetto?**
 
 La responsabilità purtroppo non basta, serve anche una procedura chiara di gestione dei task.
 
@@ -1310,7 +1310,7 @@ Con questa premessa, costruiamo la routine dello sviluppatore:
 
 _E la ricompensa dov’è?_
 
-Lo sviluppatore può vedere in tempo reale l’impatto che il proprio lavoro ha sull’obbiettivo dello sprint e sul progetto.
+Lo sviluppatore può vedere in tempo reale l’impatto che il proprio lavoro ha sull’obiettivo dello sprint e sul progetto.
 
 **Non sottovalutare quanto può essere gratificante avere la riprova di quanto è utile ciò che fai.**
 
@@ -1322,7 +1322,7 @@ E’ un noto _bias_ cognitivo chiamato appunto **effetto Ikea**: possiamo “sfr
 
 Ma esiste un altro vantaggio per lo sviluppatore.
 
-Sapere di essere sul punto di raggiungere un obbiettivo è una grande leva di stimolo per rimanere focalizzato; esattamente come essere in ritardo ma sapere di potercela ancora fare.
+Sapere di essere sul punto di raggiungere un obiettivo è una grande leva di stimolo per rimanere focalizzato; esattamente come essere in ritardo ma sapere di potercela ancora fare.
 
 Questo è il **Push Project Management**.
 
@@ -1332,7 +1332,7 @@ Grazie a questi dati siamo in grado di mettere il Project Manager – e chiunque
 
 Pensaci.
 
-Puoi conoscere in tempo reale quali attività sono state completate nello sprint, quali sono in lavorazione, quanto lavoro manca al completamento dell’obbiettivo, qual è la velocity del team.
+Puoi conoscere in tempo reale quali attività sono state completate nello sprint, quali sono in lavorazione, quanto lavoro manca al completamento dell’obiettivo, qual è la velocity del team.
 
 Tutto **senza che il Project Manager debba disturbare gli sviluppatori e compilare pile di fogli Excel.**
 
@@ -1446,7 +1446,7 @@ Ti ho raccontato fino allo sfinimento di questi due concetti. Nulla di nuovo a d
 
 _Quanti però ti propongono strumenti concreti per sostenere questi due aspetti?_
 
-**Il burndown chart e l’obbiettivo dello sprint sono le frecce al tuo arco per ottenere dal team motivazione e responsabilità**: usale con costanza e fermezza ed otterrai risultati sorprendenti.
+**Il burndown chart e l’obiettivo dello sprint sono le frecce al tuo arco per ottenere dal team motivazione e responsabilità**: usale con costanza e fermezza ed otterrai risultati sorprendenti.
 
 Abbiamo costruito un semplice strumento per monitorare lo sprint.
 
@@ -1575,7 +1575,7 @@ Il motivo è banale.
 **L'aumento delle risorse non è proporzionale all'aumento della velocity.**
 Rispetto a 5 anni prima, questa volta però era diverso. Il responsabile IT, per mia fortuna, non uscì con la stessa frase, ma soprattutto avevamo creato dei presupposti diversi.
 
-**Con il nuovo processo di sviluppo potevamo avvicinarci a questo utopico obbiettivo.**
+**Con il nuovo processo di sviluppo potevamo avvicinarci a questo utopico obiettivo.**
 
 _No, nessun miracolo._
 

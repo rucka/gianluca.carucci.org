@@ -141,13 +141,13 @@ Prima ti racconto a grandi linee la ricetta generale da seguire. Se vuoi un caso
 
 - Fissa un periodo di tempo, non meno di due 2 settimane, non più di 4.  
   **Questo periodo si chiama iterazione**, **sprint in Scrum.**
-- **Poniti un obbiettivo di business** e scegli le funzionalità da sviluppare per riuscire a raggiungerlo.  
-  Scegli l’obbiettivo che ti consentirà di aumentare maggiormente il valore del tuo prodotto o servizio.  
+- **Poniti un obiettivo di business** e scegli le funzionalità da sviluppare per riuscire a raggiungerlo.  
+  Scegli l’obiettivo che ti consentirà di aumentare maggiormente il valore del tuo prodotto o servizio.  
   _Quante funzionalità scelgo?_  
   Il maggior numero possibile che puoi analizzare, progettare, sviluppare e rilasciare in produzione entro la fine dell’iterazione.  
   _Si, hai capito bene_: **tutto quello che faresti nel modello waterfall, lo fai in una iterazione**.  
   _E si, non è un errore_. **Ciò che hai prodotto dovrai rilasciarlo in produzione, come se avessi concluso il progetto**.  
-  La differenza è che non _applichi questo processo_ per tutte le funzionalità, ma _solo per il subset che hai scelto per centrare il tuo obbiettivo_.
+  La differenza è che non _applichi questo processo_ per tutte le funzionalità, ma _solo per il subset che hai scelto per centrare il tuo obiettivo_.
 - Alla conclusione dell’iterazione inizia il processo di retrospettiva.
 - **Analizza ciò che è andato bene e ciò che è andato male**, fai test e raccogli feedback sul prodotto rilasciato.
 

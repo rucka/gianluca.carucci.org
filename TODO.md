@@ -34,6 +34,16 @@
 
 # v1.2
 
+- categorizzazione dei post in home page
+- pagine di categoria
+- post indice
+- post: box post suggeriti in fondo
+- post: box post suggeriti laterale
+- post: box newsletter sidebar
+- post: box newsletter in fondo al post
+
+# v1.3
+
 - post: torna su
 - post: share buttons
 - post: style blockquote
@@ -47,14 +57,13 @@
 - pagina chi sono
 - refactoring stili globali e font size
 - reorganizzazione componenti
-- aggiunta eventi e obbiettivi GA
+- aggiunta eventi e obiettivi GA
 - sezione testimonianze su home
 - sezione metodo su home (business/tecnologia/strategia o metodologia)
 - sezione chi sono su home
 - sezione brands su home
 - post suggeriti in pagina post
 - post: tempo di lettura
-- post: categorie (business, metodologia, strategia, tecnologia)
 - refactoring short link da json
 
 # v3 corso javascript

@@ -22,7 +22,7 @@ E’ una frase che non vorresti mai arrivare a dire davanti al tuo committente.
 
 Sappi che, esattamente come te, **anche il tuo committente non vorrebbe mai sentirtela dire**.
 
-**L’aspetto positivo è che entrambi condividete lo stesso obbiettivo.**
+**L’aspetto positivo è che entrambi condividete lo stesso obiettivo.**
 
 E’ un punto di partenza, se ci pensi bene è un ottimo punto di partenza.
 
@@ -153,12 +153,12 @@ Eccone 5 che puoi utilizzare sin da subito per migliorare l’impatto dei tuoi r
 2.  **creati un sistema di metriche** che ti indichino in qualsiasi momento come lo sviluppo software sta andando: prima ti accorgi di un problema, meno impatti genereranno.  
     Immagina una valanga.  
     E’ più facile fermarla quando è a valle o non appena si è formata a monte?
-3.  **fai scegliere al tuo committente un obbiettivo** da perseguire nel rilascio successivo.  
+3.  **fai scegliere al tuo committente un obiettivo** da perseguire nel rilascio successivo.  
     Non cento, 1.  
     Ti faccio un esempio.  
-    _nel prossimo rilascio voglio il gestionale_ non è un obbiettivo, _nel prossimo rilascio voglio permettere al cliente di compilare le fatture_ è un obbiettivo.
+    _nel prossimo rilascio voglio il gestionale_ non è un obiettivo, _nel prossimo rilascio voglio permettere al cliente di compilare le fatture_ è un obiettivo.
 4.  **sminuzza le attività** come un cuoco fa con la zucchine.  
-    Più piccole sono le attività da pianificare, più facile sarà individuare quelle che hanno un impatto più basso rispetto all’obbiettivo prefissato.  
+    Più piccole sono le attività da pianificare, più facile sarà individuare quelle che hanno un impatto più basso rispetto all’obiettivo prefissato.  
     Esempio:  
     _l’applicazione gestionale mostra nella area dell’utente una tabella a righe di colore alternato, contenete le fatture compilate ma non ancora emess_e  
     puoi spezzarlo in:  
@@ -166,7 +166,7 @@ Eccone 5 che puoi utilizzare sin da subito per migliorare l’impatto dei tuoi r
     e  
     _la tabella delle fatture compilate e non ancora emesse sono mostrate in righe di colore alternate_  
     Capisco, una bella tabella con le righe di colore diverso è più leggibile, ma concorderai con me che è meno importante rispetto a non mostrare proprio la tabella
-5.  **sposta a rilasci successivi tutte le attività non strettamente necessarie al raggiungimento dell’obbiettivo** definito dal cliente.
+5.  **sposta a rilasci successivi tutte le attività non strettamente necessarie al raggiungimento dell’obiettivo** definito dal cliente.
 
 Ti assicuro che potrai risparmiare almeno il 10% del tempo a disposizione.
 

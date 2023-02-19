@@ -1,7 +1,7 @@
 ---
 title: 'Scrum Burndown Chart: lo strumento migliore per monitorare il tuo sprint in modo facile'
 metaTitle: 'Scrum Burndown Chart il miglior strumento di project management'
-metaDesc: 'Lo Scrum Burndown Chart è uno strumento fondamentale nel project management ma può essere altrettanto efficace per monitorare i tuoi obbiettivi personali.'
+metaDesc: 'Lo Scrum Burndown Chart è uno strumento fondamentale nel project management ma può essere altrettanto efficace per monitorare i tuoi obiettivi personali.'
 socialImage: /posts/scrum-burndown-chart/burndown-chart.png
 date: '20200628'
 category: 'Digital Transformation'
@@ -14,7 +14,7 @@ In questo articolo ti parlo di uno strumento che deve far parte del tuo processo
 
 Ora _ti racconto il perché_.
 
-Tenere sotto controllo l’andamento del tuo progetto o di un tuo obbiettivo personale è diventato un problema?
+Tenere sotto controllo l’andamento del tuo progetto o di un tuo obiettivo personale è diventato un problema?
 
 Trovi noioso ed inutile aggiornare diagrammi di Gantt o simili?
 
@@ -24,7 +24,7 @@ Ti capisco.
 
 E non voglio mentirti.
 
-La scomoda verità è che **se vuoi realmente raggiungere un obbiettivo** – almeno quelli di un certo rilievo – **devi monitorarne i progressi**.
+La scomoda verità è che **se vuoi realmente raggiungere un obiettivo** – almeno quelli di un certo rilievo – **devi monitorarne i progressi**.
 
 _C’è però una buona notizia._
 
@@ -131,7 +131,7 @@ Anche.
 
 Prova ad immaginare di usare questo strumento insieme ai tuoi colleghi.
 
-Ogni giorno tu e il tuo team potete rendervi conto in un lampo, di quanto siete vicini o lontani dall’obbiettivo da raggiungere.
+Ogni giorno tu e il tuo team potete rendervi conto in un lampo, di quanto siete vicini o lontani dall’obiettivo da raggiungere.
 
 Sia che siate in ritardo (no!), sia che siate in anticipo (grandi!) **il burndown chart è uno stimolo incredibile a non mollare e mettercela tutta fino in fondo**.
 
@@ -145,7 +145,7 @@ Se gestisci un progetto lungo, puoi fare un passettino in più.
 
 _Prova a dividere il lavoro in periodi di tempo costante, ad esempio un mese_.
 
-All’inizio di ogni mese fissa un obbiettivo, scegli i task che ti permetteranno di raggiungerlo e stima per ognuno di esso il tempo di completamento.
+All’inizio di ogni mese fissa un obiettivo, scegli i task che ti permetteranno di raggiungerlo e stima per ognuno di esso il tempo di completamento.
 
 Se consideri gli story point espressi in tempo, hai tutto ciò che di serve per completare e mantenere un burndown chart.
 
