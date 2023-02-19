@@ -1,8 +1,8 @@
-import { postList } from '../services/postsService'
+import { PostInfo, postList } from '../services/postsService'
 
-const EXTERNAL_DATA_URL = 'https://jsonplaceholder.typicode.com/posts'
+const EXTERNAL_DATA_URL = 'https://carucci.org/posts'
 
-export default function SiteMap({ slugs }: { slugs: string[] }) {
+function generateSiteMap({ posts }: { posts: PostInfo[] }) {
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <!--We manually set the two URLs we know already-->
@@ -12,11 +12,14 @@ export default function SiteMap({ slugs }: { slugs: string[] }) {
      <url>
        <loc>https://carucci.org/contattami</loc>
      </url>
-     ${slugs
-       .map((slug) => {
+     <url>
+       <loc>https://carucci.org/conference/2022/pyconit</loc>
+     </url>
+     ${posts
+       .map(({ slug }) => {
          return `
        <url>
-           <loc>${`${EXTERNAL_DATA_URL.replace('jsonplaceholder.typicode.com', 'carucci.org')}/${slug}`}</loc>
+           <loc>${`${EXTERNAL_DATA_URL}/${slug}`}</loc>
        </url>
      `
        })
@@ -25,9 +28,27 @@ export default function SiteMap({ slugs }: { slugs: string[] }) {
  `
 }
 
-export async function getStaticProps() {
+function SiteMap() {
+  // getServerSideProps will do the heavy lifting
+}
+
+export async function getServerSideProps({ res }: { res: any }) {
+  // We make an API call to gather the URLs for our site
+  //   const request = await fetch(EXTERNAL_DATA_URL);
+  //   const posts = await request.json();
   const posts = await postList()
+
+  // We generate the XML sitemap with the posts data
+  const sitemap = generateSiteMap({ posts })
+
+  res.setHeader('Content-Type', 'text/xml')
+  // we send the XML to the browser
+  res.write(sitemap)
+  res.end()
+
   return {
-    props: { slugs: posts.map((p) => p.slug) }
+    props: {}
   }
 }
+
+export default SiteMap
