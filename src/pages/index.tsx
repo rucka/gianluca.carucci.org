@@ -1,24 +1,24 @@
 import Head from 'next/head'
-import useGeolocation from '../hooks/useGeolocation'
+// import useGeolocation from '../hooks/useGeolocation'
 //@ts-ignore
 import { AboutMe, BlogPosts, Testimonial } from '../components/Home'
 import { AllJsonLd, Hero } from '../components'
 import React from 'react'
 import Layout from '../components/Layout'
 import { PostInfo, postList } from '../services/postsService'
-import { useRouter } from '../hooks/useRouter'
+// import { useRouter } from '../hooks/useRouter'
 import SEO from '../next-seo.config'
 import { fullname } from '../components/AllJsonLd'
 
 type HomeProps = { posts: PostInfo[] }
 
 const Home = ({ posts }: HomeProps) => {
-  const { country } = useGeolocation()
-  const router = useRouter()
-  if (country && country !== 'it') {
-    router.goto('/en')
-    return <></>
-  }
+  // const { country } = useGeolocation()
+  // const router = useRouter()
+  // if (country && country !== 'it') {
+  //   router.goto('/en')
+  //   return <></>
+  // }
 
   return (
     <>
