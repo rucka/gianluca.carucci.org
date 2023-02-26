@@ -112,6 +112,7 @@ const ConferenceSEO = () => {
     <>
       <NextSeo
         title={title}
+        canonical={url}
         description={description}
         openGraph={{
           url,

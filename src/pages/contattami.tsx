@@ -1,9 +1,11 @@
+import { NextSeo } from 'next-seo'
 import { ParsedUrlQuery } from 'querystring'
 import styled, { css } from 'styled-components'
 import Layout from '../components/Layout'
 import { Section } from '../components/Section'
 import { device } from '../device'
 import { useRouter } from '../hooks/useRouter'
+import SEO from '../next-seo.config'
 
 const MAILCHIMP_LIST_URL = 'https://carucci.us19.list-manage.com/subscribe/post'
 const MAILCHIMP_U = '15f4540d5a1f1b4542ea82de5'
@@ -15,8 +17,13 @@ export const Contattami = () => {
   const type = extractType(query)
 
   const options = type !== undefined ? [type] : Object.keys(OPTIONS)
+
+  const slug = 'contattami'
+  const url = `${SEO.openGraph?.url}${slug}`
+
   return (
     <>
+      <NextSeo canonical={url} />
       <Layout>
         <Section
           css={css`

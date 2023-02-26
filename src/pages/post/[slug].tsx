@@ -66,6 +66,7 @@ const PostSEO = ({ slug, header }: Omit<PostProps, 'content'>) => {
       <NextSeo
         title={header.metaTitle}
         description={header.metaDesc}
+        canonical={url}
         openGraph={{
           url,
           images: [

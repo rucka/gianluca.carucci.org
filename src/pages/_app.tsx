@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
-import { DefaultSeo,  } from 'next-seo'
+import { DefaultSeo } from 'next-seo'
 import SEO from '../next-seo.config'
 import { GlobalStyle, FoticoTheme } from '../../theme'
 
