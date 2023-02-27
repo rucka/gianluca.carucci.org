@@ -15,7 +15,7 @@ tags:
 
 Anzi, più che un libro parla di un pilastro per ogni essere umano. Leggendo questo articolo capirai il perchè.
 
-_"Come trattare gli altrri e farseli amici"_, di Dale Carnegie.
+_"Come trattare gli altri e farseli amici"_, di Dale Carnegie.
 
 **Partiamo**!
 
