@@ -5,7 +5,7 @@ export const QRCodeShortLink = () => {
   useShortLink('q', 'qrcode')
   return (
     <>
-      <NextSeo noindex={true} />
+      <NextSeo noindex={true} nofollow={true} />
     </>
   )
 }

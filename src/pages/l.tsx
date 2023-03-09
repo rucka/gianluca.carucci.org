@@ -5,7 +5,7 @@ export const TextShortLink = () => {
   useShortLink('l', 'banner')
   return (
     <>
-      <NextSeo noindex={true} />
+      <NextSeo noindex={true} nofollow={true} />
     </>
   )
 }
