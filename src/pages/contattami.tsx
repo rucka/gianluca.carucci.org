@@ -16,7 +16,7 @@ export const Contattami = () => {
   const message = typeof window !== 'undefined' && query && query['message'] ? query['message'] + '\n' : ''
   const type = extractType(query)
 
-  const options = type !== undefined ? [type] : Object.keys(OPTIONS)
+  const options = type !== undefined ? [type] : (Object.keys(OPTIONS) as OptionsKey[])
 
   const slug = 'contattami'
   const url = `${SEO.openGraph?.url}${slug}`
@@ -77,7 +77,7 @@ const extractType = (query: ParsedUrlQuery) => {
   if (!query || typeof window === 'undefined' || !query['type']) {
     return
   }
-  const type = query['type']
+  const type = query['type'] as OptionsKey
   if (typeof type !== 'string') {
     return
   }
@@ -95,6 +95,8 @@ const OPTIONS = {
   'Intervista, evento, speech': 'Intervista, evento, speech',
   Altro: 'Altro'
 }
+type Options = typeof OPTIONS
+type OptionsKey = keyof Options
 
 export default Contattami
 
