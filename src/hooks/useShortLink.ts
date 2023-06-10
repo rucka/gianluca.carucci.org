@@ -39,5 +39,8 @@ const redirectTo: (medium: string) => (p: string) => string | undefined = (mediu
   if (conference === 'pycon22') {
     return `/conference/2022/pyconit?utm_source=${source}&utm_medium=${medium}&utm_campaign=${conference}`
   }
+  if (conference === 'wrksft23') {
+    return `/conference/2023/workingsoftware?utm_source=${source}&utm_medium=${medium}&utm_campaign=${conference}`
+  }
   return undefined
 }

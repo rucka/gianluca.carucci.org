@@ -31,6 +31,10 @@ const nextConfig = {
         source: '/conference/2022/pyconit',
         destination: '/conference/pyconit'
       },
+      {
+        source: '/conference/2023/workingsoftware',
+        destination: '/conference/workingsoftware2023'
+      },
       { source: '/l/:path*', destination: '/l?:path*' },
       { source: '/q/:path*', destination: '/q?:path*' }
     ]

@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo'
 import { useState } from 'react'
 import styled, { css } from 'styled-components'
 import { GithubIcon, SlideIcon, TextIcon } from '../../assets/icons'
-import { Pyconit } from '../../assets/images'
+import { Workingsoftware } from '../../assets/images'
 import { AllJsonLd } from '../../components'
 import { fullname } from '../../components/AllJsonLd'
 import Layout from '../../components/Layout'
@@ -71,7 +71,7 @@ export default function ConferencePage() {
             </Content>
           </Container>
           <Sidebar>
-            <Pyconit />
+            <Workingsoftware />
             <ResourceBox>
               <Resource>
                 <Code href={talk.codeUrl} target="_blank">
@@ -100,11 +100,11 @@ export default function ConferencePage() {
 }
 
 const ConferenceSEO = () => {
-  const slug = '2022/pyconit'
+  const slug = '2023/workingsoftware'
   const url = `${SEO.openGraph?.url}conference/${slug}`
   const title = talk.title
   const description = talk.abstract
-  const datePublished = '2022-05-024T00:00:01+02:00'
+  const datePublished = '2023-06-030T00:00:01+02:00'
   const dateModified = datePublished
   const images = SEO.openGraph?.images ?? []
   const imageUrl = images[0].url
@@ -291,10 +291,10 @@ const Tag = styled.span`
 `
 
 const talk = {
-  conference: 'pycon it',
+  conference: 'workingsoftware',
   title: 'Autenticazione e autorizzazione in salsa microservice',
   abstract: `Se partiamo da un monolite è tutto facile: verifichiamo le credenziali sul database (e/o utilizziamo oauth) e il gioco è fatto. I monoliti sono semplici e utili in tantissimi casi, ma non sempre. A volte abbiamo bisogno di una architettura a microservizi, magari con linguaggi e stack tecnologici differenti. Chi verifica le credenziali? Come ogni servizio è in grado di identificare in modo sicuro l’utente e assegnargli i giusti ruoli per poter esaudire le richieste? Queste sono alcune domande che un sistema distribuito ci impone di valutare. In questo talk analizzeremo tramite demo e un caso reale e complesso, i diversi modi e le tecniche per gestire l’autorizzazione e l’autenticazione in un mondo a microservizi, illustrando pregi e difetti di ogni soluzione.`,
-  slideUrl: 'https://www.canva.com/design/DAE_JvWj2LU/view',
-  codeUrl: 'https://github.com/rucka/pyconit2022',
-  date: '3 giugno 2022'
+  slideUrl: 'https://www.canva.com/design/DAFlZxz6tEA/AD2BFanl1_z836T31zQVQg/view',
+  codeUrl: 'https://github.com/rucka/workingsoftware2023',
+  date: '30 giugno 2023'
 }
