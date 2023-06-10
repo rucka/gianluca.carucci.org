@@ -9,7 +9,7 @@ export const useShortLink = (prefix: string, medium: string) => {
     let d: string | undefined
     if (pathname.includes('/q/ggj') || pathname.includes('/l/ggj')) {
       d =
-        'https://www.kering.com/en/talent/job-offers?search_career%5Bbrand%5D%5B%5D=Gucci&search_career%5BjobCountry%5D%5B%5D=Italy&search_career%5BjobFamily%5D%5B%5D=Information%20Technology&'
+        'https://kering.wd3.myworkdayjobs.com/Gucci?jobFamilyGroup=517ee4a1834801a8d4fabae1bb3f3819'
     } else {
       const path = normalizePath(prefix)(pathname)
       d = redirectTo(medium)(path)
